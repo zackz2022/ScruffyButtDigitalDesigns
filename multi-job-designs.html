@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Request a personalized multi-job graphic design package from Scruffy Butt Digital Designs." />
+    <title>Multi-Job Graphic Designs | Scruffy Butt Digital Designs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Scruffy Butt Digital Designs home">
+          <span class="brand-logo"><img src="logo.png" alt="Scruffy Butt Digital Designs logo" /></span>
+          <span class="brand-name">Scruffy Butt Designs</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html#catalog">Catalog</a>
+          <a href="digital-media.html">Digital Media</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="request.html">Request</a>
+          <a href="multi-job-designs.html" aria-current="page">Multi-Job Designs</a>
+          <a href="partnerships.html">Partnerships</a>
+          <a href="faq.html">FAQ</a>
+          <a href="policies.html">Policies</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="digital-media.html" class="btn btn-primary">Shop Digital</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="partner-hero">
+        <div class="container partner-hero-grid">
+          <div>
+            <span class="eyebrow">Digital graphic design packages</span>
+            <h1>One vision. Multiple custom designs.</h1>
+            <p>
+              Request a coordinated package of personalized digital graphic designs created specifically
+              for your brand, campaign, event, or multiple creative jobs.
+            </p>
+          </div>
+          <div class="partner-highlight">
+            <strong>Digital only.</strong>
+            <span>No printed or physical products.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing">
+        <div class="container">
+          <div class="section-heading narrow">
+            <span class="eyebrow">Choose your package</span>
+            <h2>Custom work for more than one design job.</h2>
+          </div>
+
+          <div class="partnership-grid">
+            <article class="partnership-card">
+              <span class="partner-icon" aria-hidden="true">✨</span>
+              <h3>Brand &amp; Identity Package</h3>
+              <p>Coordinate logos, brand graphics, social profile elements, and promotional visuals in one consistent style.</p>
+            </article>
+            <article class="partnership-card">
+              <span class="partner-icon" aria-hidden="true">📱</span>
+              <h3>Social Campaign Package</h3>
+              <p>Receive a set of personalized posts, banners, story graphics, announcements, and campaign templates.</p>
+            </article>
+            <article class="partnership-card">
+              <span class="partner-icon" aria-hidden="true">📘</span>
+              <h3>Digital Product Package</h3>
+              <p>Plan e-book covers, interior graphics, workbooks, planners, and matching promotional digital artwork.</p>
+            </article>
+            <article class="partnership-card">
+              <span class="partner-icon" aria-hidden="true">🧩</span>
+              <h3>Custom Multi-Job Request</h3>
+              <p>Build a package for any combination of personalized digital graphic design jobs you need.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing partnership-form-section">
+        <div class="container">
+          <div class="section-heading narrow">
+            <span class="eyebrow">Request a package</span>
+            <h2>Describe every design included in your project.</h2>
+          </div>
+
+          <div class="multi-job-agreement-notice">
+            <div>
+              <span>Required before project acceptance</span>
+              <strong>Complete the Jotform agreement packet.</strong>
+            </div>
+            <a class="btn btn-secondary" href="https://form.jotform.com/263251710802044" target="_blank" rel="noopener noreferrer">
+              Open Agreement Packet
+            </a>
+          </div>
+
+          <form id="multi-job-form" class="request-form partnership-form">
+            <div class="form-grid">
+              <label>
+                Full name *
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Email address *
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+              <label>
+                Phone number
+                <input type="tel" name="phone" autocomplete="tel" />
+              </label>
+              <label>
+                Business or brand name
+                <input type="text" name="business" autocomplete="organization" />
+              </label>
+              <label>
+                Approximate number of designs *
+                <input type="number" name="designCount" min="2" max="100" required placeholder="Minimum 2" />
+              </label>
+              <label>
+                Package type *
+                <select name="packageType" required>
+                  <option value="">Choose a package</option>
+                  <option>Brand and identity package</option>
+                  <option>Social campaign package</option>
+                  <option>Digital product package</option>
+                  <option>Custom multi-job package</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              List each design job *
+              <textarea name="jobs" rows="9" maxlength="5000" required placeholder="List every design, its purpose, size or dimensions, wording, colors, preferred style, delivery format, and deadline."></textarea>
+            </label>
+
+            <label>
+              Reference photos
+              <input id="multi-job-photos" type="file" accept="image/*" multiple />
+              <span class="upload-guidance">Upload up to 6 reference photos. They can be attached to the email draft after submission.</span>
+            </label>
+            <output id="multi-job-photo-list" class="photo-list" aria-live="polite"></output>
+
+            <label>
+              Proposed timeline
+              <input type="text" name="timeline" placeholder="Example: Start in January, complete within 30 days" />
+            </label>
+
+            <div class="copyright-note">
+              <strong>Personalized digital artwork</strong>
+              <p>
+                Every design is personally created for you. Printing, fabrication, or physical production
+                is not included. Digital copyright is transferred to the publisher when the publisher
+                completes purchase and payment for the final design package.
+              </p>
+            </div>
+
+            <label class="terms-checkbox">
+              <input type="checkbox" name="copyrightTerms" required />
+              <span>I understand that this is a digital-only design package and the publisher receives digital copyright upon completed purchase.</span>
+            </label>
+
+            <label class="terms-checkbox">
+              <input type="checkbox" name="agreementPacket" required />
+              <span>I completed the required Jotform agreement packet for this personalized or corporate multi-job design request.</span>
+            </label>
+
+            <button class="btn btn-primary large" type="submit">Send Multi-Job Request</button>
+            <p class="form-note">Submitting opens your email app with the completed package request.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand" aria-label="Scruffy Butt Digital Designs home">
+            <span class="brand-logo brand-logo-small"><img src="logo.png" alt="Scruffy Butt Digital Designs logo" /></span>
+            <span class="brand-name">Scruffy Butt Digital Designs</span>
+          </a>
+          <p>Creative digital designs, products and resources with personality, imagination and attitude.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#catalog">Designs</a></li>
+            <li><a href="digital-media.html">Digital Products</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Custom Work</h4>
+          <ul>
+            <li><a href="request.html">Personalized Design</a></li>
+            <li><a href="multi-job-designs.html">Multi-Job Designs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>Celeste Hannah</li>
+            <li><a href="mailto:misshannah@scruffybuttdigitaldesigns.com">Customer Service</a></li>
+            <li>Monday–Sunday · 10 AM–10 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Scruffy Butt Digital Designs</span>
+        <span>🐾 Put Some Scruff on Your Stuff</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
