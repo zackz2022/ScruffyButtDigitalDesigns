@@ -7,11 +7,21 @@ const MAX_QUANTITY = 20;
 const STORE_URL =
 "https://zackz2022.github.io";
 
-const BOOK_COUNT = 17;
+const BOOK_COUNT = 56;
 
-function corsHeaders(origin) {
+function corsHeaders(origin) { 
+const headers = {
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Access-Contro;-Allow-Headers": "Content-Type",
+  "Vary": "Origin"
+};
+  if (origin === STORE_URL) {
+    headers["Access-Control-Allow-Origin"] = origin;
+  }
+  return headers;
+}
 const allowed =
-origin === STORE_URL ? origin : "null";
+origin === STORE_URL ? origin : "null"; origin = "https://zackz2022.github.io";
 
 return {
 "Access-Control-Allow-Origin": allowed,
