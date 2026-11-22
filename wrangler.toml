@@ -1,1 +1,6 @@
+name = "scruffybuttpaypal"
+main = "worker.js"
+compatibility_date = "2026-11-22"
 
+[vars]
+STORE_ORIGIN = "https://zackz2022.github.io"
