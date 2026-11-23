@@ -566,8 +566,7 @@ await db
 const totals = await affiliateTotals(db, affiliateId);
 return json({ ok: true, balance_cents: totals.balance_cents }, 201);
 }
-```
-```js
+js
 async function affiliateApi(request, env, pathname, json) {
 const db = env.AFFILIATES_DB;
 if (!db) return json({ error: "Affiliate database is not configured." }, 503);
@@ -816,3 +815,4 @@ return json({ error: "Unable to process the PayPal request." }, 500, origin, sto
 }
 }
 };
+
