@@ -1,0 +1,113 @@
+diff --git a/index-github.html b/index-updated.html
+index bf7459c..1725794 100644
+--- a/index-github.html
++++ b/index-updated.html
+@@ -3,2 +3,5 @@
+ <head>
++  <script 
++  src="https://www.paypal.com/sdk/js?client-id=BAAAjGWF1WWKXfsRmuVH_5Y_x-enXUn31BYSGuVnrQhKvH2ktez2SVIpqYzgu5QKZ_oJdXp9F5DxhGFfoU&components=hosted-buttons&enable-funding=venmo&currency=USD">
++</script>
+ <meta charset="UTF-8">
+@@ -340,3 +343,3 @@ html {
+ .cover-title {
+-  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
++  font-family: "Comic Sans MS", "Comic Sans";
+ 
+@@ -399,3 +402,3 @@ html {
+ .shop-info h3 {
+-  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
++  font-family: "Comic Sans MS", "Comic Sans";
+ 
+@@ -443,3 +446,3 @@ html {
+ 
+-  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
++  font-family: "Comic Sans MS", "Comic Sans";
+ 
+@@ -650,35 +653,35 @@ Scruffy Butt Digital Designs
+ <nav
+-class="main-nav"
+-aria-label="Main navigation">
++class="royal-paw-passage"
++aria-label="Royal Paw Passage">
+ 
+-<a href="#catalog">
+-Catalog
++<a href="#scruffy-digital-directory">
++Scruffy Digital Directory
+ </a>
+ 
+-<a href="#digital-links">
+-Digital Shop
++<a href="#the-royal-paw-marketplace">
++The Royal Paw Marketplace
+ </a>
+ 
+-<a href="#features">
+-Features
++<a href="#flex-&-finesse-showcase">
++Flex & Finesse ShowCase
+ </a>
+ 
+-<a href="services.html">
+-Services
++<a href="glitter-&-grind-designs.html">
++Glitter & Grind Designs
+ </a>
+ 
+-<a href="about.html">
+-About
++<a href="paws-passion-&-purpose-the-story-behind-who-i-am.html">
++Paws, Passion & Purpose: The Story Behind Who I Am
+ </a>
+ 
+-<a href="request.html">
+-Request
++<a href="wishes-&-requests.html">
++Wishes & Requests Vault
+ </a>
+ 
+-<a href="multi-job-designs.html">
+-Multi-Job Designs
++<a href="the-sparkle-&-save-services.html">
++The Sparkle & Save Services
+ </a>
+ 
+-<a href="paws-partnerships.html">
+-Paws & Partnerships
++<a href="the-pink-collar-collective.html">
++The Pink Collar Collective
+ </a>
+@@ -689,8 +692,8 @@ FAQ
+ 
+-<a href="our-promise-to-you.html">
+-Our Promise to You
++<a href="the-fine-print.html">
++The Fine Print
+ </a>
+ 
+-<a href="connect-collaborate.html">
+-Connect & Collaborate
++<a href="the-luxe-lounge.html">
++The Luxe Lounge
+ </a>
+@@ -767,7 +770,11 @@ Scruffy Butt Digital Designs
+ 
++Where Creativity Gets Classy, Ideas Get Sassy, and Every Vision Has a Purpose!
++Scruffy Butt Digital Designs is a creative digital design business and online marketplace dedicated to transforming imagination into inspiration, ideas into extraordinary creations, and everyday ambitions into achievable possibilities. 
++We specialize in digital books, educational resources, personalized designs, creative content, and professional digital services that encourage personal growth, financial empowerment, entrepreneurship, and lifelong learning. Our online boutiques offers a growing collection of downloadable digital products covering personal development, budgeting, financial literacy, crypyocurrency, artificial intelligence, business development, wellness, and more.
++
++But we are more than just a digital bookstore!
++
++From custom design projects and personalized creative solutions to bundled services, business collaborations, and innovattive digital creations that range from simple personalized designs you may get on a hat or hoody as a christmas present or as large as flexible services for a million dollar company brand launch tailored to your individual style, personal vision, and business needs.
++*Business Branding *Custom Projects *Personalized Apparel Designs *Holidays *Special Occasions *Bulk Orders *One-of-a-Kind Digital Designs *Website designing *Business Card Logos *Purses/Totes *Personalized Monograms * Memorial/Tribute graphics *Advertisement Banners * Promotional Flyers *Product Packaging Designs *Social Media Branding Kits *Business Luanch Design Packages *Marketing & Promotional Campaigns *Personalized Decorations * Wall Art *Digital Prints *Canvas Artwork *Pet Memorials *eBook Covers * Childrens book Illustrations *Journals *Planners *Author Branding kits *Facebook Business Banners * Digital Advertisements *Social Media Content Packages *Influencer Branding kits *Creator Merchandise designs *Sports-Inspired Graphics *music-Inspired Artwork* Gamer merchandise *Corporate promotional packages *Wedding Stationary collections *Event branding packages 
+ 
+ 
+@@ -818,2 +825,8 @@ Direct product access
+ 
++<div id="paypal-container-ZQKDWR2EQQNW4"></div>
++<script>
++  paypal.HostedButtons({
++    hostedButtonId: "ZQKDWR2EQQNW4",
++  }).render("#paypal-container-ZQKDWR2EQQNW4")
++</script>
+ 

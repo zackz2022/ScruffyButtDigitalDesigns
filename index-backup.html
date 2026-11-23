@@ -1,0 +1,5570 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+  name="description"
+  content="Scruffy Butt Digital Designs — creative digital products, guides, resources and designs with personality and attitude."
+>
+
+<title>Scruffy Butt Digital Designs</title>
+
+  <a href="https://launchon.it/products/scruffy-butt-digital-designs" target="_blank" rel="noopener">
+  <img src="https://launchon.it/api/badge/scruffy-butt-digital-designs?theme=dark&size=md&type=upvotes" alt="Scruffy Butt Digital Designs on LaunchOnIt">
+</a>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+/* ==================================================
+   SCRUFFY BUTT DIGITAL SHOP
+================================================== */
+
+*
+  {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.digital-shop {
+  padding: 80px 20px;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #46142f 0%,
+      #180811 32%,
+      #080306 65%,
+      #020102 100%
+    );
+
+  color: white;
+}
+
+.shop-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.shop-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.shop-heading .eyebrow {
+  color: #ff69b4;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.shop-heading h2 {
+  font-size: clamp(34px, 6vw, 60px);
+  margin: 10px 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff4fa8,
+      #ffd36b,
+      #ff75ba
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.shop-heading p {
+  max-width: 760px;
+  margin: auto;
+
+  color: #e2d6dd;
+  font-size: 17px;
+}
+
+
+/* SEARCH */
+
+.shop-search-wrap {
+  max-width: 650px;
+  margin: 30px auto 22px;
+}
+
+.shop-search {
+  width: 100%;
+
+  padding: 16px 20px;
+
+  border-radius: 50px;
+
+  border: 2px solid #c88b38;
+
+  background: #10070d;
+
+  color: white;
+
+  font-size: 16px;
+
+  outline: none;
+
+  box-shadow:
+    0 0 12px rgba(255, 76, 166, .25);
+}
+
+.shop-search:focus {
+  border-color: #ff55a8;
+
+  box-shadow:
+    0 0 15px rgba(255, 76, 166, .6);
+}
+
+.shop-search::placeholder {
+  color: #bbaab3;
+}
+
+
+/* CATEGORY BUTTONS */
+
+.shop-filters {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 40px;
+}
+
+.shop-filter {
+  border: 1px solid #ff5aaa;
+
+  background: #160912;
+
+  color: white;
+
+  padding: 10px 15px;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  transition: .25s;
+}
+
+.shop-filter:hover,
+.shop-filter.active {
+  background:
+    linear-gradient(
+      135deg,
+      #e92180,
+      #ff67b2,
+      #c68a35
+    );
+
+  border-color: #ffd36b;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 12px rgba(255, 72, 162, .7);
+}
+
+
+/* RESULTS */
+
+.shop-results {
+  text-align: center;
+
+  color: #d8c6d0;
+
+  margin: -20px 0 30px;
+
+  font-weight: 600;
+}
+
+
+/* PRODUCT GRID */
+
+.shop-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 28px;
+}
+
+
+/* CARD */
+
+.shop-card {
+  padding: 3px;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ff3d9c,
+      #ffd36b,
+      #ff65b3,
+      #9f6826
+    );
+
+  transition: .3s;
+
+  box-shadow:
+    0 0 12px rgba(255, 61, 156, .3);
+}
+
+.shop-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 0 22px rgba(255, 61, 156, .7),
+    0 0 35px rgba(255, 210, 90, .25);
+}
+
+.shop-card-inner {
+  height: 100%;
+
+  border-radius: 21px;
+
+  padding: 17px;
+
+  background:
+    linear-gradient(
+      155deg,
+      #25101c,
+      #090507 60%,
+      #020102
+    );
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* FAUX BOOK COVER */
+
+.shop-cover {
+  height: 280px;
+
+  border-radius: 16px;
+
+  border: 2px solid #dba044;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #57183c,
+      #1c0914 50%,
+      #050304 100%
+    );
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 25px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow:
+    inset 0 0 35px rgba(255, 80, 165, .16),
+    0 0 14px rgba(255, 76, 164, .4);
+}
+
+.shop-cover::before {
+  content: "✦";
+
+  position: absolute;
+
+  top: 13px;
+
+  left: 17px;
+
+  color: #ffd36b;
+
+  font-size: 20px;
+}
+
+.shop-cover::after {
+  content: "✦";
+
+  position: absolute;
+
+  bottom: 13px;
+
+  right: 17px;
+
+  color: #ff5bab;
+
+  font-size: 20px;
+}
+
+.cover-icon {
+  font-size: 52px;
+
+  margin-bottom: 14px;
+
+  filter:
+    drop-shadow(
+      0 0 8px rgba(255, 90, 180, .7)
+    );
+}
+
+.cover-title {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+  font-size: 21px;
+
+  font-weight: bold;
+
+  line-height: 1.25;
+
+  color: white;
+}
+
+.cover-brand {
+  margin-top: 18px;
+
+  color: #ffd36b;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.shop-info {
+  padding: 18px 4px 3px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex-grow: 1;
+}
+
+.shop-category {
+  align-self: center;
+
+  border: 1px solid #ff5aaa;
+
+  border-radius: 30px;
+
+  color: #ffabd3;
+
+  padding: 5px 11px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+}
+
+.shop-info h3 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+  text-align: center;
+
+  font-size: 20px;
+
+  line-height: 1.3;
+
+  margin: 0;
+
+  color: white;
+}
+
+.shop-sparkle {
+  text-align: center;
+
+  color: #ff64af;
+
+  letter-spacing: 7px;
+
+  margin: 10px 0;
+
+  text-shadow:
+    0 0 7px #ff419c;
+}
+
+.shop-info p {
+  color: #d9cfd5;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  flex-grow: 1;
+
+  margin-bottom: 15px;
+}
+
+
+/* PRICE */
+
+.product-price {
+  text-align: center;
+
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+  font-size: 32px;
+
+  font-weight: 900;
+
+  color: #ffd36b;
+
+  margin: 7px 0 18px;
+
+  text-shadow:
+    0 0 8px rgba(255, 211, 107, .75),
+    0 0 15px rgba(255, 79, 168, .45);
+}
+
+
+/* BUY BUTTON */
+
+.shop-buy {
+  display: block;
+
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border-radius: 50px;
+
+  border: 1px solid #ffd36b;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #df1978,
+      #ff65b0 55%,
+      #c4862e
+    );
+
+  transition: .25s;
+
+  box-shadow:
+    0 0 10px rgba(255, 65, 158, .45);
+}
+
+.shop-buy:hover {
+  transform: scale(1.03);
+
+  box-shadow:
+    0 0 16px #ff459e,
+    0 0 25px rgba(255, 210, 90, .4);
+}
+
+.shop-cart {
+  margin: 0 0 32px;
+  padding: 22px;
+  border: 2px solid #dba044;
+  border-radius: 20px;
+  background: rgba(16, 7, 13, .92);
+}
+
+.shop-cart h3 {
+  margin: 0 0 12px;
+  color: #ffd36b;
+}
+
+.shop-cart-items {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.shop-cart-item,
+.shop-cart-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.shop-cart-item {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 211, 107, .25);
+}
+
+.shop-cart-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shop-cart-controls button {
+  min-width: 34px;
+  min-height: 34px;
+  border: 1px solid #ffd36b;
+  border-radius: 50%;
+  background: #25101c;
+  color: #fff;
+}
+
+.shop-cart-summary {
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  color: #ffd36b;
+}
+
+#paypal-button-container {
+  width: min(100%, 440px);
+  min-height: 44px;
+}
+
+#checkout-status {
+  margin: 12px 0 0;
+  color: #e2d6dd;
+}
+
+.shop-card .shop-buy {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.shop-publisher-link {
+  display: block;
+  margin-top: 10px;
+  color: #ffd36b;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+/* PHONE */
+
+@media(max-width: 600px) {
+
+  .digital-shop {
+    padding: 55px 14px;
+  }
+
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-card {
+    max-width: 390px;
+
+    width: 100%;
+
+    margin: auto;
+  }
+
+  .shop-filter {
+    font-size: 11px;
+
+    padding: 8px 10px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================================================
+     HEADER
+================================================ -->
+
+<header class="site-header">
+
+<div class="container nav-wrap">
+
+<a
+href="index.html"
+class="brand"
+aria-label="Scruffy Butt Digital Designs home">
+
+<span class="brand-logo">
+
+<img
+src="logo.png"
+alt="Scruffy Butt Digital Designs logo">
+
+</span>
+
+<span class="brand-name">
+Scruffy Butt Digital Designs
+</span>
+
+</a>
+
+
+<nav
+class="main-nav"
+aria-label="Main navigation">
+
+<a href="#catalog">
+Catalog
+</a>
+
+<a href="#digital-links">
+Digital Shop
+</a>
+
+<a href="#features">
+Features
+</a>
+
+<a href="services.html">
+Services
+</a>
+
+<a href="about.html">
+About
+</a>
+
+<a href="request.html">
+Request
+</a>
+
+<a href="multi-job-designs.html">
+Multi-Job Designs
+</a>
+
+<a href="partnerships.html">
+Partnerships
+</a>
+
+<a href="faq.html">
+FAQ
+</a>
+
+<a href="policies.html">
+Policies
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+</nav>
+
+
+<div class="nav-actions">
+
+<a
+href="#digital-links"
+class="btn btn-primary">
+
+Shop Digital
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- SLOGAN -->
+
+<div class="slogan-banner">
+
+<p class="slogan-text">
+
+🐾 Put Some Scruff on Your Stuff 🐾
+
+</p>
+
+</div>
+
+
+<main id="home">
+
+
+<!-- ================================================
+     HERO
+================================================ -->
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+
+<div class="hero-copy">
+
+<div
+class="brand-crest"
+aria-label="Scruffy Butt Digital Designs logo">
+
+<img
+src="logo.png"
+alt="Scruffy Butt Digital Designs logo">
+
+</div>
+
+
+<span class="eyebrow">
+Creative Digital Design with Attitude
+</span>
+
+
+<h1>
+Scruffy Butt Digital Designs
+</h1>
+
+
+<p>
+
+Creative digital products, guides and designs
+with personality, imagination and a little attitude.
+
+Explore resources for business, money, AI,
+marketing, lifestyle, personal growth and more.
+
+</p>
+
+
+<div class="hero-actions">
+
+<a
+href="#digital-links"
+class="btn btn-primary large">
+
+Browse Digital Products
+
+</a>
+
+
+<a
+href="#catalog"
+class="btn btn-secondary large">
+
+Explore Designs
+
+</a>
+
+</div>
+
+
+<ul
+class="trust-list"
+aria-label="Shop features">
+
+<li>
+Digital products
+</li>
+
+<li>
+Multiple categories
+</li>
+
+<li>
+Direct product access
+</li>
+
+</ul>
+
+</div>
+
+
+<div
+class="hero-visual"
+aria-label="Scruffy Butt Digital Designs preview">
+
+<div class="dashboard-card main-card">
+
+<div class="card-header">
+
+<span class="dot dot-red"></span>
+<span class="dot dot-yellow"></span>
+<span class="dot dot-green"></span>
+
+</div>
+
+
+<div class="stat-row">
+
+<div>
+
+<p>
+Scruffy Butt
+</p>
+
+<strong>
+Digital Collection
+</strong>
+
+</div>
+
+<div class="trend up">
+🐾
+</div>
+
+</div>
+
+
+<div class="mini-grid">
+
+<div class="mini-card accent">
+
+<span>
+Explore
+</span>
+
+<strong>
+Digital Guides
+</strong>
+
+</div>
+
+
+<div class="mini-card">
+
+<span>
+Discover
+</span>
+
+<strong>
+Creative Resources
+</strong>
+
+</div>
+
+
+<div class="mini-card wide">
+
+<span>
+Our Style
+</span>
+
+<strong>
+Bold • Fun • Creative
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="floating-badge badge-one">
+
+<span>
+Digital
+</span>
+
+<strong>
+Products
+</strong>
+
+</div>
+
+
+<div class="floating-badge badge-two">
+
+<span>
+Scruffy
+</span>
+
+<strong>
+🐾 With Attitude
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================================================
+     BRAND STRIP
+================================================ -->
+
+<section class="partners">
+
+<div
+class="container partner-row"
+aria-label="Scruffy Butt brand values">
+
+<span>
+Creative
+</span>
+
+<span>
+Digital
+</span>
+
+<span>
+Original
+</span>
+
+<span>
+Bold
+</span>
+
+<span>
+Scruffy
+</span>
+
+</div>
+
+</section>
+
+
+<!-- ================================================
+     EXISTING DESIGN CATALOG
+================================================ -->
+
+<section
+id="catalog"
+class="catalog section-spacing">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<span class="eyebrow">
+Explore Our Designs
+</span>
+
+<h2>
+Unique digital designs with personality and attitude.
+</h2>
+
+</div>
+
+
+<div
+class="filter-bar"
+aria-label="Product categories">
+
+<button
+class="filter-btn active"
+data-filter="all">
+
+All
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="templates">
+
+Templates
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="media">
+
+Illustrations
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="marketing">
+
+Branding
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="sites">
+
+Web Design
+
+</button>
+
+</div>
+
+
+<div class="product-grid">
+
+
+<article
+class="product-card"
+data-category="templates">
+
+<a
+href="product-1.html"
+class="product-thumb-link">
+
+<div class="product-thumb thumb-one"></div>
+
+</a>
+
+<div class="product-body">
+
+<div class="meta-row">
+
+<span class="tag">
+Templates
+</span>
+
+</div>
+
+<h3>
+Logo Design Pack
+</h3>
+
+<p>
+Creative logo templates for building
+a memorable digital brand.
+</p>
+
+<div class="product-footer">
+
+<a
+href="product-1.html"
+class="btn btn-small btn-primary">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+<article
+class="product-card"
+data-category="media">
+
+<a
+href="product-2.html"
+class="product-thumb-link">
+
+<div class="product-thumb thumb-two"></div>
+
+</a>
+
+<div class="product-body">
+
+<div class="meta-row">
+
+<span class="tag">
+Illustrations
+</span>
+
+</div>
+
+<h3>
+Character Illustration Bundle
+</h3>
+
+<p>
+Colorful character illustrations
+for creative projects.
+</p>
+
+<div class="product-footer">
+
+<a
+href="product-2.html"
+class="btn btn-small btn-primary">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+<article
+class="product-card"
+data-category="marketing">
+
+<a
+href="product-3.html"
+class="product-thumb-link">
+
+<div class="product-thumb thumb-three"></div>
+
+</a>
+
+<div class="product-body">
+
+<div class="meta-row">
+
+<span class="tag">
+Branding
+</span>
+
+</div>
+
+<h3>
+Brand Identity Kit
+</h3>
+
+<p>
+Creative branding resources for
+developing your visual identity.
+</p>
+
+<div class="product-footer">
+
+<a
+href="product-3.html"
+class="btn btn-small btn-primary">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+<article
+class="product-card"
+data-category="sites">
+
+<a
+href="product-4.html"
+class="product-thumb-link">
+
+<div class="product-thumb thumb-four"></div>
+
+</a>
+
+<div class="product-body">
+
+<div class="meta-row">
+
+<span class="tag">
+Web Design
+</span>
+
+</div>
+
+<h3>
+Website Design
+</h3>
+
+<p>
+Creative website designs built
+to showcase personality.
+</p>
+
+<div class="product-footer">
+
+<a
+href="product-4.html"
+class="btn btn-small btn-primary">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================================================
+     DIGITAL SHOP
+================================================ -->
+
+<section
+id="digital-links"
+class="digital-shop">
+
+<div class="shop-container">
+
+
+<div class="shop-heading">
+
+<span class="eyebrow">
+
+🐾 Scruffy Butt Digital Library
+
+</span>
+
+<h2>
+Find Your Next Digital Guide
+</h2>
+
+<p>
+
+Browse our collection of digital guides covering
+AI, money, business, marketing, personal growth,
+home, lifestyle, wellness and more.
+
+</p>
+
+</div>
+
+
+<div class="shop-search-wrap">
+
+<input
+type="search"
+id="shopSearch"
+class="shop-search"
+placeholder="🔎 Search digital products..."
+aria-label="Search digital products">
+
+</div>
+
+
+<div class="shop-filters">
+
+<button
+class="shop-filter active"
+data-shop-filter="all">
+
+🐾 All
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="ai">
+
+🤖 AI & Automation
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="money">
+
+💰 Money & Crypto
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="marketing">
+
+📣 Marketing
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="business">
+
+💼 Business
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="growth">
+
+💖 Personal Growth
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="home">
+
+🏡 Home & Lifestyle
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="wellness">
+
+🧘 Wellness
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="style">
+
+👗 Style
+
+</button>
+
+</div>
+
+
+<div
+id="shopResults"
+class="shop-results">
+</div>
+
+<section class="shop-cart" aria-labelledby="book-cart-heading">
+  <h3 id="book-cart-heading">Your cart <span id="cart-count">(0 items)</span></h3>
+  <ul id="cart-items" class="shop-cart-items"></ul>
+  <div class="shop-cart-summary">
+    <span id="cart-empty">Your cart is empty.</span>
+    <strong>Total: <span id="cart-total">$0.00</span></strong>
+  </div>
+  <div id="paypal-button-container"></div>
+  <p id="checkout-status" role="status" aria-live="polite">
+    Secure PayPal checkout will appear after payment settings are configured.
+  </p>
+</section>
+
+<div
+id="shopGrid"
+class="shop-grid">
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================================================
+     FEATURES
+================================================ -->
+
+<section
+id="features"
+class="features section-spacing">
+
+<div class="container">
+
+
+<div class="section-heading narrow">
+
+<span class="eyebrow">
+Why Scruffy Butt?
+</span>
+
+<h2>
+Digital creativity with personality.
+</h2>
+
+</div>
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+✨
+</div>
+
+<h3>
+Creative Variety
+</h3>
+
+<p>
+Explore digital resources across
+multiple topics and interests.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🐾
+</div>
+
+<h3>
+Scruffy Style
+</h3>
+
+<p>
+A playful brand built around creativity,
+personality and attitude.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+⚡
+</div>
+
+<h3>
+Easy Access
+</h3>
+
+<p>
+Choose a product and go directly
+to its sales page.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+💖
+</div>
+
+<h3>
+Easy Browsing
+</h3>
+
+<p>
+Search and filter categories to
+quickly find what interests you.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================================================
+     PROMO
+================================================ -->
+
+<section class="promo-strip">
+
+<div class="container promo-inner">
+
+<div>
+
+<span class="eyebrow light">
+Ready to explore?
+</span>
+
+<h2>
+Find a digital guide that fits your next goal.
+</h2>
+
+</div>
+
+
+<a
+href="#digital-links"
+class="btn btn-light">
+
+Shop Digital Products
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================================================
+     SERVICES
+================================================ -->
+
+<section
+id="pricing"
+class="pricing section-spacing">
+
+<div class="container">
+
+<div class="section-heading narrow">
+
+<span class="eyebrow">
+Creative Services
+</span>
+
+<h2>
+Bring your digital ideas to life.
+</h2>
+
+</div>
+
+
+<div class="pricing-grid">
+
+
+<div class="pricing-card">
+
+<span class="plan">
+Digital Design
+</span>
+
+<h3>
+Custom
+</h3>
+
+<ul>
+
+<li>
+Creative digital concepts
+</li>
+
+<li>
+Personalized design direction
+</li>
+
+<li>
+Digital-ready files
+</li>
+
+<li>
+Creative branding options
+</li>
+
+</ul>
+
+<a
+href="contact.html"
+class="btn btn-secondary full">
+
+Contact Us
+
+</a>
+
+</div>
+
+
+<div class="pricing-card featured-plan">
+
+<span class="plan">
+Digital Products
+</span>
+
+<h3>
+$29
+</h3>
+
+<ul>
+
+<li>
+Digital guides
+</li>
+
+<li>
+Business resources
+</li>
+
+<li>
+Lifestyle resources
+</li>
+
+<li>
+Multiple categories
+</li>
+
+</ul>
+
+<a
+href="#digital-links"
+class="btn btn-primary full">
+
+Browse Products
+
+</a>
+
+</div>
+
+
+<div class="pricing-card">
+
+<span class="plan">
+Brand Design
+</span>
+
+<h3>
+Creative
+</h3>
+
+<ul>
+
+<li>
+Logo concepts
+</li>
+
+<li>
+Brand identity ideas
+</li>
+
+<li>
+Digital graphics
+</li>
+
+<li>
+Custom creative work
+</li>
+
+</ul>
+
+<a
+href="contact.html"
+class="btn btn-secondary full">
+
+Contact Us
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================================================
+     FOOTER
+================================================ -->
+
+<footer
+id="contact"
+class="site-footer">
+
+<div class="container footer-grid">
+
+
+<div>
+
+<a
+href="index.html"
+class="brand"
+aria-label="Scruffy Butt Digital Designs home">
+
+<span class="brand-logo brand-logo-small">
+
+<img
+src="logo.png"
+alt="Scruffy Butt Digital Designs logo">
+
+</span>
+
+<span class="brand-name">
+Scruffy Butt Digital Designs
+</span>
+
+</a>
+
+<p>
+
+Creative digital designs, products and resources
+with personality, imagination and attitude.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h4>
+Explore
+</h4>
+
+<ul>
+
+<li>
+<a href="#catalog">
+Designs
+</a>
+</li>
+
+<li>
+<a href="#digital-links">
+Digital Products
+</a>
+</li>
+
+<li>
+<a href="#features">
+About
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>
+Categories
+</h4>
+
+<ul>
+
+<li>
+<a href="#digital-links">
+Business
+</a>
+</li>
+
+<li>
+<a href="#digital-links">
+Money
+</a>
+</li>
+
+<li>
+<a href="#digital-links">
+Lifestyle
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>
+Scruffy Butt
+</h4>
+
+<ul>
+
+<li>
+<a href="#digital-links">
+Shop
+</a>
+</li>
+
+<li>
+<a href="#pricing">
+Creative Services
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+
+<div class="container footer-bottom">
+
+<span>
+© 2026 Scruffy Butt Digital Designs
+</span>
+
+<span>
+🐾 Put Some Scruff on Your Stuff
+</span>
+
+</div>
+
+</footer>
+
+
+<!-- ================================================
+     ORIGINAL WEBSITE JAVASCRIPT
+================================================ -->
+
+<script src="script.js"></script>
+<script src="payment-config.js"></script>
+
+
+<!-- ================================================
+     DIGITAL SHOP DATABASE
+================================================ -->
+
+<script>
+
+const scruffyProducts = [
+
+/* AI */
+
+{
+title:"AI Tools for Business Automation",
+url:"https://clickcloneprofits.app/s/tFvb-5FCg3",
+category:"ai",
+label:"AI & Automation",
+icon:"🤖",
+description:"Explore AI tools and automation strategies for modern business workflows."
+},
+
+{
+title:"Mastering AI for Trendy Content Creation",
+url:"https://clickcloneprofits.app/s/yG1GyrHN1g",
+category:"ai",
+label:"AI & Content",
+icon:"✨",
+description:"Explore AI-powered approaches for creating modern digital content."
+},
+
+{
+title:"Faceless YouTube Automation",
+url:"https://clickcloneprofits.app/s/RxN4zH2gf9",
+category:"ai",
+label:"YouTube Automation",
+icon:"▶️",
+description:"Explore strategies for developing and managing faceless YouTube content."
+},
+
+
+/* MONEY */
+
+{
+title:"Budgeting for Financial Freedom",
+url:"https://clickcloneprofits.app/s/N2B-eCdwrk",
+category:"money",
+label:"Budgeting",
+icon:"💵",
+description:"Explore practical budgeting habits for taking greater control of your money."
+},
+
+{
+title:"Crypto Fundamentals",
+url:"https://clickcloneprofits.app/s/fNbpSIb8X_",
+category:"money",
+label:"Crypto",
+icon:"₿",
+description:"An introductory guide to cryptocurrency concepts and terminology."
+},
+
+{
+title:"The Side Hustle Blueprint",
+url:"https://clickcloneprofits.app/s/I4xPwm7QqQ",
+category:"money",
+label:"Side Hustles",
+icon:"💰",
+description:"Explore strategies for developing and organizing a side hustle."
+},
+
+{
+title:"Investing Your First $10K",
+url:"https://clickcloneprofits.app/s/oC8qMIFh_I",
+category:"money",
+label:"Investing",
+icon:"📈",
+description:"Explore investing concepts and strategies for your first major milestone."
+},
+
+{
+title:"Debt Freedom in 12 Months",
+url:"https://clickcloneprofits.app/s/NW4x1m6zeo",
+category:"money",
+label:"Debt",
+icon:"💳",
+description:"Explore an organized approach to setting and tracking debt-reduction goals."
+},
+
+{
+title:"Amazon KDP Passive Income",
+url:"https://clickcloneprofits.app/s/PfiD0048Z2",
+category:"money",
+label:"Publishing",
+icon:"📚",
+description:"Explore digital publishing and the Amazon KDP business model."
+},
+
+{
+title:"Etsy Digital Products Empire",
+url:"https://clickcloneprofits.app/s/2xZUdT0yVK",
+category:"money",
+label:"Digital Products",
+icon:"🛍️",
+description:"Explore the process of developing a digital-product business for Etsy."
+},
+
+{
+title:"The Complete Guide to Recognizing Where You Spend Money & How to Budget",
+url:"https://clickcloneprofits.app/s/JAlUnab-SO",
+category:"money",
+label:"Budgeting",
+icon:"🧾",
+description:"Take a closer look at spending habits and learn how to build a practical budget."
+},
+
+{
+title:"How to Save $100,000 in Your 30s & Retire by 65",
+url:"https://clickcloneprofits.app/s/S3yD9rWl7A",
+category:"money",
+label:"Savings",
+icon:"🏦",
+description:"Explore long-term savings goals and retirement-focused financial planning."
+},
+
+{
+title:"The Psychology in Trading Crypto & the Tricks to Making Money",
+url:"https://clickcloneprofits.app/s/Jybxt2C0tp",
+category:"money",
+label:"Crypto Psychology",
+icon:"🧠",
+description:"Explore trading psychology and emotional discipline in crypto markets."
+},
+
+{
+title:"Mastering Crypto Trading Psychology for Resilience",
+url:"https://clickcloneprofits.app/s/Hkq8IznYDK",
+category:"money",
+label:"Trading Mindset",
+icon:"📊",
+description:"Develop a stronger mindset for navigating the emotional side of crypto trading."
+},
+
+
+/* MARKETING */
+
+{
+title:"Content Marketing Playbook",
+url:"https://clickcloneprofits.app/s/R06sbWRr5E",
+category:"marketing",
+label:"Content Marketing",
+icon:"📣",
+description:"Explore strategies for creating and promoting digital content."
+},
+
+{
+title:"Facebook Ads on a Budget",
+url:"https://clickcloneprofits.app/s/bhWrnAjepj",
+category:"marketing",
+label:"Facebook Ads",
+icon:"📘",
+description:"Explore Facebook advertising approaches while working with a smaller budget."
+},
+
+{
+title:"SEO Simplified",
+url:"https://clickcloneprofits.app/s/w9Mq7rPQgf",
+category:"marketing",
+label:"SEO",
+icon:"🔎",
+description:"Learn the basics behind improving the visibility of online content."
+},
+
+{
+title:"Email Marketing That Converts",
+url:"https://clickcloneprofits.app/s/ldRN1Qx-GE",
+category:"marketing",
+label:"Email Marketing",
+icon:"📧",
+description:"Explore strategies for creating stronger email marketing campaigns."
+},
+
+{
+title:"Instagram Growth Blueprint",
+url:"https://clickcloneprofits.app/s/_m4QeJD7wy",
+category:"marketing",
+label:"Instagram",
+icon:"📱",
+description:"Explore strategies for developing and growing an Instagram presence."
+},
+
+{
+title:"Social Media Manager Startup",
+url:"https://clickcloneprofits.app/s/4rUt3vdXoZ",
+category:"marketing",
+label:"Social Media",
+icon:"💬",
+description:"Explore the basics of starting a social-media-management business."
+},
+
+
+/* BUSINESS */
+
+{
+title:"Digital Tools for a Smarter Better Life!",
+url:"https://clickcloneprofits.app/s/HDn4PpoR5c",
+category:"business",
+label:"Digital Tools",
+icon:"💻",
+description:"Explore digital tools designed to help simplify everyday life and work."
+},
+
+{
+title:"Project Management Simplified",
+url:"https://clickcloneprofits.app/s/CI7seHTd1o",
+category:"business",
+label:"Project Management",
+icon:"📋",
+description:"A simplified introduction to planning and managing projects."
+},
+
+{
+title:"Solopreneur Launch Blueprint",
+url:"https://clickcloneprofits.app/s/rznMBgtCWd",
+category:"business",
+label:"Entrepreneurship",
+icon:"🚀",
+description:"Explore the steps involved in developing your own solo business."
+},
+
+{
+title:"Time Blocking for Peak Performance",
+url:"https://clickcloneprofits.app/s/XTOYP1fnwF",
+category:"business",
+label:"Productivity",
+icon:"⏰",
+description:"Learn how to organize your schedule through focused blocks of time."
+},
+
+{
+title:"Remote Work Mastery",
+url:"https://clickcloneprofits.app/s/JiXled8v4m",
+category:"business",
+label:"Remote Work",
+icon:"🏠",
+description:"Explore habits and strategies for productive remote work."
+},
+
+{
+title:"Freelance Writing Fast Track",
+url:"https://clickcloneprofits.app/s/aFmCJcAGlb",
+category:"business",
+label:"Freelancing",
+icon:"✍️",
+description:"Explore the basics of developing a freelance writing path."
+},
+
+{
+title:"Fearless Public Speaking",
+url:"https://clickcloneprofits.app/s/Q49qnzNfeC",
+category:"business",
+label:"Public Speaking",
+icon:"🎤",
+description:"Explore ways to build confidence and strengthen your public-speaking skills."
+},
+
+{
+title:"Memory & Learning Accelerator",
+url:"https://clickcloneprofits.app/s/GZ0lUCEW2d",
+category:"business",
+label:"Learning",
+icon:"🧠",
+description:"Explore techniques for strengthening learning and memory habits."
+},
+/* PERSONAL GROWTH */
+
+{
+title:"The Gratitude Transformation",
+url:"https://clickcloneprofits.app/s/Xvy5phQWbs",
+category:"growth",
+label:"Gratitude",
+icon:"💖",
+description:"Explore gratitude practices and intentional personal reflection."
+},
+
+{
+title:"Journaling for Self-Discovery",
+url:"https://clickcloneprofits.app/s/P5LQxB1wXQ",
+category:"growth",
+label:"Self Discovery",
+icon:"📔",
+description:"Use journaling as a tool for reflection and understanding yourself."
+},
+
+{
+title:"Manifestation Methods That Work",
+url:"https://clickcloneprofits.app/s/K_nZTJ7U9m",
+category:"growth",
+label:"Manifestation",
+icon:"✨",
+description:"Explore manifestation practices focused on goals and intentional thinking."
+},
+
+{
+title:"The Introvert's Social Playbook",
+url:"https://clickcloneprofits.app/s/AbNRLYl6t7",
+category:"growth",
+label:"Social Confidence",
+icon:"🌸",
+description:"Explore practical approaches to social situations and communication."
+},
+
+{
+title:"Rebuilding Trust After Betrayal",
+url:"https://clickcloneprofits.app/s/v8xn8K-JgO",
+category:"growth",
+label:"Relationships",
+icon:"💔",
+description:"Explore reflection and communication after trust has been damaged."
+},
+
+{
+title:"Boundaries That Heal",
+url:"https://clickcloneprofits.app/s/EsGxE3tGO9",
+category:"growth",
+label:"Boundaries",
+icon:"🩷",
+description:"Explore healthier boundaries and stronger personal relationships."
+},
+
+{
+title:"Dating Confidence After 40",
+url:"https://clickcloneprofits.app/s/VkCCFjUN_Q",
+category:"growth",
+label:"Dating",
+icon:"💕",
+description:"Explore confidence and self-assurance while navigating dating after 40."
+},
+
+{
+title:"Communication Blueprint for Couples",
+url:"https://clickcloneprofits.app/s/Kzv1Rbebhb",
+category:"growth",
+label:"Couples",
+icon:"💑",
+description:"Explore communication strategies for stronger connections between partners."
+},
+
+{
+title:"The Confidence Blueprint",
+url:"https://clickcloneprofits.app/s/mT2Qgmy0nL",
+category:"growth",
+label:"Confidence",
+icon:"⭐",
+description:"Explore practical ways to strengthen confidence and self-belief."
+},
+
+
+/* HOME & LIFESTYLE */
+
+{
+title:"Urban Container Gardening",
+url:"https://clickcloneprofits.app/s/5WAxPT3qOa",
+category:"home",
+label:"Gardening",
+icon:"🌱",
+description:"Explore container gardening for homes with limited outdoor space."
+},
+
+{
+title:"Minimalist Home Organization",
+url:"https://clickcloneprofits.app/s/9J00LHI2dQ",
+category:"home",
+label:"Organization",
+icon:"🏡",
+description:"Explore simpler approaches to organizing and decluttering your home."
+},
+
+{
+title:"Natural DIY Cleaning Products",
+url:"https://clickcloneprofits.app/s/rmTESC6Uu_",
+category:"home",
+label:"DIY Home",
+icon:"🧽",
+description:"Explore ideas for making household cleaning products at home."
+},
+
+{
+title:"Meal Prep Mastery",
+url:"https://clickcloneprofits.app/s/_Q7l00-qz4",
+category:"home",
+label:"Meal Prep",
+icon:"🍱",
+description:"Build a more organized approach to planning and preparing meals."
+},
+
+{
+title:"Digital Detox & Deep Focus",
+url:"https://clickcloneprofits.app/s/9sfCNSnxaB",
+category:"home",
+label:"Digital Wellness",
+icon:"📵",
+description:"Explore healthier technology habits and strategies for focused time."
+},
+
+{
+title:"The 5AM Morning Mastery",
+url:"https://clickcloneprofits.app/s/VbAsI3ji88",
+category:"home",
+label:"Morning Routine",
+icon:"🌅",
+description:"Explore routines for building a more intentional start to your day."
+},
+
+
+/* WELLNESS */
+
+{
+title:"Chakra Healing Fundamentals",
+url:"https://clickcloneprofits.app/s/UmrJXc4EqR",
+category:"wellness",
+label:"Holistic Wellness",
+icon:"🌈",
+description:"Explore introductory chakra concepts and related wellness practices."
+},
+
+{
+title:"Meditation for the Modern Mind",
+url:"https://clickcloneprofits.app/s/8mfT1hYNG1",
+category:"wellness",
+label:"Mindfulness",
+icon:"🧘",
+description:"Explore meditation practices designed for busy modern lifestyles."
+},
+
+{
+title:"Yoga for Chronic Pain Relief",
+url:"https://clickcloneprofits.app/s/bW07y2pEN6",
+category:"wellness",
+label:"Yoga",
+icon:"🧘‍♀️",
+description:"Explore gentle yoga-focused approaches to movement and wellness."
+},
+
+{
+title:"Couch to 5K Running Guide",
+url:"https://clickcloneprofits.app/s/Gx5ypS3xyH",
+category:"wellness",
+label:"Running",
+icon:"🏃",
+description:"A beginner-focused guide for building toward a 5K running goal."
+},
+
+{
+title:"Intermittent Fasting Decoded",
+url:"https://clickcloneprofits.app/s/uG3w89DJty",
+category:"wellness",
+label:"Nutrition",
+icon:"🥗",
+description:"An informational introduction to intermittent fasting concepts."
+},
+
+{
+title:"Home Workout Revolution",
+url:"https://clickcloneprofits.app/s/LwngraQ6mx",
+category:"wellness",
+label:"Fitness",
+icon:"🏋️",
+description:"Explore ways to build a fitness routine from home."
+},
+
+{
+title:"Keto Lifestyle Jumpstart",
+url:"https://clickcloneprofits.app/s/OwwPDOntWf",
+category:"wellness",
+label:"Keto",
+icon:"🥑",
+description:"An introductory guide to the keto lifestyle and its common approaches."
+},
+
+{
+title:"The Anti-Inflammatory Lifestyle",
+url:"https://clickcloneprofits.app/s/cFME75Iuvh",
+category:"wellness",
+label:"Wellness",
+icon:"🌿",
+description:"Explore lifestyle ideas associated with an anti-inflammatory approach."
+},
+
+{
+title:"Natural Anxiety Relief",
+url:"https://clickcloneprofits.app/s/6hMxLzGMGz",
+category:"wellness",
+label:"Relaxation",
+icon:"🌷",
+description:"Explore general relaxation and wellness practices for everyday stress."
+},
+
+{
+title:"Hormone Balance for Women Over 40",
+url:"https://clickcloneprofits.app/s/geHobHkq_2",
+category:"wellness",
+label:"Women's Wellness",
+icon:"🌺",
+description:"An informational lifestyle guide focused on wellness after 40."
+},
+
+{
+title:"Sleep Optimization Blueprint",
+url:"https://clickcloneprofits.app/s/i4QFQ7JJlT",
+category:"wellness",
+label:"Sleep",
+icon:"🌙",
+description:"Explore habits and routines associated with healthier sleep practices."
+},
+
+{
+title:"The Gut Health Reset",
+url:"https://clickcloneprofits.app/s/DDQnAf4hA5",
+category:"wellness",
+label:"Gut Wellness",
+icon:"🌿",
+description:"An informational lifestyle guide focused on everyday digestive wellness."
+},
+
+
+/* STYLE */
+
+{
+title:"The Capsule Wardrobe Guide",
+url:"https://clickcloneprofits.app/s/kwoEPwsnG8",
+category:"style",
+label:"Style",
+icon:"👗",
+description:"Explore a simpler, more intentional approach to building and organizing your wardrobe."
+}
+
+];
+
+
+/* ================================================
+   SHOP SETUP
+================================================ */
+
+const shopGrid =
+document.getElementById("shopGrid");
+
+const shopSearch =
+document.getElementById("shopSearch");
+
+const shopResults =
+document.getElementById("shopResults");
+
+let activeCategory = "all";
+
+
+/* ================================================
+   RENDER PRODUCT CARDS
+================================================ */
+
+function renderShop() {
+
+  const searchText =
+    shopSearch.value
+      .toLowerCase()
+      .trim();
+
+
+  const filteredProducts =
+    scruffyProducts.filter(product => {
+
+      const matchesCategory =
+        activeCategory === "all" ||
+        product.category === activeCategory;
+
+
+      const matchesSearch =
+        product.title
+          .toLowerCase()
+          .includes(searchText) ||
+
+        product.label
+          .toLowerCase()
+          .includes(searchText) ||
+
+        product.description
+          .toLowerCase()
+          .includes(searchText);
+
+
+      return (
+        matchesCategory &&
+        matchesSearch
+      );
+
+    });
+
+
+  shopGrid.innerHTML = "";
+
+
+  shopResults.textContent =
+    `${filteredProducts.length} digital product${filteredProducts.length === 1 ? "" : "s"} found`;
+
+
+  filteredProducts.forEach(product => {
+
+    const card =
+      document.createElement("article");
+
+
+    card.className =
+      "shop-card";
+
+
+    card.innerHTML = `
+
+      <div class="shop-card-inner">
+
+
+        <!-- FAUX DIGITAL BOOK COVER -->
+
+        <div class="shop-cover">
+
+          <div class="cover-icon">
+            ${product.icon}
+          </div>
+
+
+          <div class="cover-title">
+            ${product.title}
+          </div>
+
+
+          <div class="cover-brand">
+            Scruffy Butt Digital Designs
+          </div>
+
+        </div>
+
+
+        <!-- PRODUCT INFORMATION -->
+
+        <div class="shop-info">
+
+
+          <span class="shop-category">
+            ${product.label}
+          </span>
+
+
+          <h3>
+            ${product.title}
+          </h3>
+
+
+          <div class="shop-sparkle">
+            ✦ ♥ ✦
+          </div>
+
+
+          <p>
+            ${product.description}
+          </p>
+
+
+          <!-- PRODUCT PRICE -->
+
+          <div class="product-price">
+            $29.00
+          </div>
+
+
+          <button
+            class="shop-buy"
+            type="button"
+            data-add-book="${scruffyProducts.indexOf(product) + 1}">
+            🐾 ADD TO CART
+          </button>
+          <a
+            class="shop-publisher-link"
+            href="${product.url}"
+            target="_blank"
+            rel="noopener noreferrer">
+            View publisher page
+          </a>
+
+
+        </div>
+
+      </div>
+
+    `;
+
+
+    shopGrid.appendChild(card);
+
+  });
+
+}
+
+
+/* ================================================
+   CATEGORY FILTERS
+================================================ */
+
+document
+  .querySelectorAll(
+    ".shop-filter"
+  )
+  .forEach(button => {
+
+    button.addEventListener(
+      "click",
+      () => {
+
+        document
+          .querySelectorAll(
+            ".shop-filter"
+          )
+          .forEach(btn => {
+
+            btn.classList.remove(
+              "active"
+            );
+
+          });
+
+
+        button.classList.add(
+          "active"
+        );
+
+
+        activeCategory =
+          button.dataset.shopFilter;
+
+
+        renderShop();
+
+      }
+    );
+
+  });
+
+
+/* ================================================
+   SEARCH
+================================================ */
+
+shopSearch.addEventListener(
+  "input",
+  renderShop
+);
+
+
+/* ================================================
+   LOAD SHOP
+================================================ */
+
+renderShop();
+
+/* ================================================
+   PAYPAL BOOK CHECKOUT
+================================================ */
+
+const paymentConfig = window.SCRUFFY_PAYMENT_CONFIG || {};
+const cartItems = document.getElementById("cart-items");
+const cartCount = document.getElementById("cart-count");
+const cartEmpty = document.getElementById("cart-empty");
+const cartTotal = document.getElementById("cart-total");
+const checkoutStatus = document.getElementById("checkout-status");
+const paypalContainer = document.getElementById("paypal-button-container");
+const cart = new Map();
+const maxQuantityPerBook = 20;
+
+function setCheckoutStatus(message) {
+  checkoutStatus.textContent = message;
+}
+
+function renderCart() {
+  cartItems.replaceChildren();
+  let totalQuantity = 0;
+
+  cart.forEach(item => {
+    totalQuantity += item.quantity;
+    const row = document.createElement("li");
+    row.className = "shop-cart-item";
+
+    const title = document.createElement("span");
+    title.textContent = `${item.name} — $29.00`;
+
+    const controls = document.createElement("span");
+    controls.className = "shop-cart-controls";
+
+    const decrease = document.createElement("button");
+    decrease.type = "button";
+    decrease.textContent = "−";
+    decrease.setAttribute("aria-label", `Remove one ${item.name}`);
+    decrease.addEventListener("click", () => updateQuantity(item.id, item.quantity - 1));
+
+    const quantity = document.createElement("span");
+    quantity.textContent = String(item.quantity);
+    quantity.setAttribute("aria-label", `Quantity: ${item.quantity}`);
+
+    const increase = document.createElement("button");
+    increase.type = "button";
+    increase.textContent = "+";
+    increase.setAttribute("aria-label", `Add one ${item.name}`);
+    increase.addEventListener("click", () => updateQuantity(item.id, item.quantity + 1));
+
+    controls.append(decrease, quantity, increase);
+    row.append(title, controls);
+    cartItems.append(row);
+  });
+
+  cartCount.textContent = `(${totalQuantity} item${totalQuantity === 1 ? "" : "s"})`;
+  cartTotal.textContent = `$${(totalQuantity * 29).toFixed(2)}`;
+  cartEmpty.hidden = totalQuantity > 0;
+}
+
+function updateQuantity(id, quantity) {
+  if (quantity < 1) {
+    cart.delete(id);
+  } else if (quantity <= maxQuantityPerBook) {
+    const product = scruffyProducts[id - 1];
+    cart.set(id, { id, name: product.title, quantity });
+  } else {
+    setCheckoutStatus(`You can add up to ${maxQuantityPerBook} copies of each book.`);
+    return;
+  }
+  renderCart();
+}
+
+shopGrid.addEventListener("click", event => {
+  const button = event.target.closest("[data-add-book]");
+  if (!button) return;
+
+  const id = Number(button.dataset.addBook);
+  const currentQuantity = cart.get(id)?.quantity || 0;
+  updateQuantity(id, currentQuantity + 1);
+});
+
+function loadPayPalCheckout() {
+  const clientId = paymentConfig.paypalClientId?.trim();
+  const apiBaseUrl = paymentConfig.apiBaseUrl?.trim().replace(/\/+$/, "");
+  let apiUrl;
+
+  try {
+    apiUrl = new URL(apiBaseUrl);
+  } catch {
+    setCheckoutStatus("PayPal checkout is not configured. Please contact the store for help.");
+    return;
+  }
+
+  if (!clientId || apiUrl.protocol !== "https:") {
+    setCheckoutStatus("PayPal checkout is not configured. Please contact the store for help.");
+    return;
+  }
+
+  const sdk = document.createElement("script");
+  sdk.src = `https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(clientId)}&currency=USD&intent=capture&components=buttons`;
+  sdk.onload = () => {
+    if (!window.paypal) {
+      setCheckoutStatus("PayPal checkout could not be loaded. Please try again later.");
+      return;
+    }
+
+    window.paypal.Buttons({
+      async createOrder() {
+        if (cart.size === 0) {
+          setCheckoutStatus("Add at least one book to your cart before checking out.");
+          throw new Error("Cannot create an order for an empty cart.");
+        }
+
+        setCheckoutStatus("Preparing your secure PayPal checkout...");
+        const response = await fetch(`${apiUrl.origin}${apiUrl.pathname.replace(/\/$/, "")}/api/orders`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ cart: Array.from(cart.values()) })
+        });
+        const order = await response.json();
+        if (!response.ok || !order.id) {
+          throw new Error(order.error || "PayPal could not create your order.");
+        }
+        return order.id;
+      },
+      async onApprove(data) {
+        setCheckoutStatus("Confirming your payment with PayPal...");
+        const response = await fetch(
+          `${apiUrl.origin}${apiUrl.pathname.replace(/\/$/, "")}/api/orders/${encodeURIComponent(data.orderID)}/capture`,
+          { method: "POST" }
+        );
+        const result = await response.json();
+        if (!response.ok || result.verified !== true || result.status !== "COMPLETED") {
+          throw new Error(result.error || "PayPal could not verify your payment.");
+        }
+
+        cart.clear();
+        renderCart();
+        setCheckoutStatus(
+          `Payment complete. We will email your PDF to the address on your PayPal receipt. Order ${result.orderId}.`
+        );
+      },
+      onCancel() {
+        setCheckoutStatus("Checkout was cancelled. Your cart is still saved here.");
+      },
+      onError(error) {
+        console.error("PayPal checkout error:", error);
+        setCheckoutStatus("PayPal checkout could not be completed. Please try again or contact the store.");
+      }
+    }).render("#paypal-button-container").catch(error => {
+      console.error("PayPal button rendering failed:", error);
+      setCheckoutStatus("PayPal checkout could not be loaded. Please try again later.");
+    });
+  };
+  sdk.onerror = () => {
+    setCheckoutStatus("PayPal checkout could not be loaded. Please try again later.");
+  };
+  document.head.append(sdk);
+}
+
+loadPayPalCheckout();
+
+</script>
+
+</body>
+
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAAjGWF1WWKXfsRmuVH_5Y_x-enXUn31BYSGuVnrQhKvH2ktez2SVIpqYzgu5QKZ_oJdXp9F5DxhGFfoU&components=hosted-buttons&enable-funding=venmo&currency=USD">
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+  name="description"
+  content="Scruffy Butt Digital Designs — creative digital products, guides, resources and designs with personality and attitude."
+>
+
+<title>Scruffy Butt Digital Designs</title>
+
+  <a href="https://launchon.it/products/scruffy-butt-digital-designs" target="_blank" rel="noopener">
+  <img src="https://launchon.it/api/badge/scruffy-butt-digital-designs?theme=dark&size=md&type=upvotes" alt="Scruffy Butt Digital Designs on LaunchOnIt">
+</a>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+/* ==================================================
+   SCRUFFY BUTT DIGITAL SHOP
+================================================== */
+
+*
+  {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.digital-shop {
+  padding: 80px 20px;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #46142f 0%,
+      #180811 32%,
+      #080306 65%,
+      #020102 100%
+    );
+
+  color: white;
+}
+
+.shop-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.shop-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.shop-heading .eyebrow {
+  color: #ff69b4;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.shop-heading h2 {
+  font-size: clamp(34px, 6vw, 60px);
+  margin: 10px 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff4fa8,
+      #ffd36b,
+      #ff75ba
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.shop-heading p {
+  max-width: 760px;
+  margin: auto;
+
+  color: #e2d6dd;
+  font-size: 17px;
+}
+
+
+/* SEARCH */
+
+.shop-search-wrap {
+  max-width: 650px;
+  margin: 30px auto 22px;
+}
+
+.shop-search {
+  width: 100%;
+
+  padding: 16px 20px;
+
+  border-radius: 50px;
+
+  border: 2px solid #c88b38;
+
+  background: #10070d;
+
+  color: white;
+
+  font-size: 16px;
+
+  outline: none;
+
+  box-shadow:
+    0 0 12px rgba(255, 76, 166, .25);
+}
+
+.shop-search:focus {
+  border-color: #ff55a8;
+
+  box-shadow:
+    0 0 15px rgba(255, 76, 166, .6);
+}
+
+.shop-search::placeholder {
+  color: #bbaab3;
+}
+
+
+/* CATEGORY BUTTONS */
+
+.shop-filters {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 40px;
+}
+
+.shop-filter {
+  border: 1px solid #ff5aaa;
+
+  background: #160912;
+
+  color: white;
+
+  padding: 10px 15px;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  transition: .25s;
+}
+
+.shop-filter:hover,
+.shop-filter.active {
+  background:
+    linear-gradient(
+      135deg,
+      #e92180,
+      #ff67b2,
+      #c68a35
+    );
+
+  border-color: #ffd36b;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 12px rgba(255, 72, 162, .7);
+}
+
+
+/* RESULTS */
+
+.shop-results {
+  text-align: center;
+
+  color: #d8c6d0;
+
+  margin: -20px 0 30px;
+
+  font-weight: 600;
+}
+
+
+/* PRODUCT GRID */
+
+.shop-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 28px;
+}
+
+
+/* CARD */
+
+.shop-card {
+  padding: 3px;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ff3d9c,
+      #ffd36b,
+      #ff65b3,
+      #9f6826
+    );
+
+  transition: .3s;
+
+  box-shadow:
+    0 0 12px rgba(255, 61, 156, .3);
+}
+
+.shop-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 0 22px rgba(255, 61, 156, .7),
+    0 0 35px rgba(255, 210, 90, .25);
+}
+
+.shop-card-inner {
+  height: 100%;
+
+  border-radius: 21px;
+
+  padding: 17px;
+
+  background:
+    linear-gradient(
+      155deg,
+      #25101c,
+      #090507 60%,
+      #020102
+    );
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* FAUX BOOK COVER */
+
+.shop-cover {
+  height: 280px;
+
+  border-radius: 16px;
+
+  border: 2px solid #dba044;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #57183c,
+      #1c0914 50%,
+      #050304 100%
+    );
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 25px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow:
+    inset 0 0 35px rgba(255, 80, 165, .16),
+    0 0 14px rgba(255, 76, 164, .4);
+}
+
+.shop-cover::before {
+  content: "✦";
+
+  position: absolute;
+
+  top: 13px;
+
+  left: 17px;
+
+  color: #ffd36b;
+
+  font-size: 20px;
+}
+
+.shop-cover::after {
+  content: "✦";
+
+  position: absolute;
+
+  bottom: 13px;
+
+  right: 17px;
+
+  color: #ff5bab;
+
+  font-size: 20px;
+}
+
+.cover-icon {
+  font-size: 52px;
+
+  margin-bottom: 14px;
+
+  filter:
+    drop-shadow(
+      0 0 8px rgba(255, 90, 180, .7)
+    );
+}
+
+.cover-title {
+  font-family: "Comic Sans MS", "Comic Sans";
+
+  font-size: 21px;
+
+  font-weight: bold;
+
+  line-height: 1.25;
+
+  color: white;
+}
+
+.cover-brand {
+  margin-top: 18px;
+
+  color: #ffd36b;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.shop-info {
+  padding: 18px 4px 3px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex-grow: 1;
+}
+
+.shop-category {
+  align-self: center;
+
+  border: 1px solid #ff5aaa;
+
+  border-radius: 30px;
+
+  color: #ffabd3;
+
+  padding: 5px 11px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+}
+
+.shop-info h3 {
+  font-family: "Comic Sans MS", "Comic Sans";
+
+  text-align: center;
+
+  font-size: 20px;
+
+  line-height: 1.3;
+
+  margin: 0;
+
+  color: white;
+}
+
+.shop-sparkle {
+  text-align: center;
+
+  color: #ff64af;
+
+  letter-spacing: 7px;
+
+  margin: 10px 0;
+
+  text-shadow:
+    0 0 7px #ff419c;
+}
+
+.shop-info p {
+  color: #d9cfd5;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  flex-grow: 1;
+
+  margin-bottom: 15px;
+}
+
+
+/* PRICE */
+
+.product-price {
+  text-align: center;
+
+  font-family: "Comic Sans MS", "Comic Sans";
+
+  font-size: 32px;
+
+  font-weight: 900;
+
+  color: #ffd36b;
+
+  margin: 7px 0 18px;
+
+  text-shadow:
+    0 0 8px rgba(255, 211, 107, .75),
+    0 0 15px rgba(255, 79, 168, .45);
+}
+
+
+/* BUY BUTTON */
+
+.shop-buy {
+  display: block;
+
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border-radius: 50px;
+
+  border: 1px solid #ffd36b;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #df1978,
+      #ff65b0 55%,
+      #c4862e
+    );
+
+  transition: .25s;
+
+  box-shadow:
+    0 0 10px rgba(255, 65, 158, .45);
+}
+
+.shop-buy:hover {
+  transform: scale(1.03);
+
+  box-shadow:
+    0 0 16px #ff459e,
+    0 0 25px rgba(255, 210, 90, .4);
+}
+
+.shop-cart {
+  margin: 0 0 32px;
+  padding: 22px;
+  border: 2px solid #dba044;
+  border-radius: 20px;
+  background: rgba(16, 7, 13, .92);
+}
+
+.shop-cart h3 {
+  margin: 0 0 12px;
+  color: #ffd36b;
+}
+
+.shop-cart-items {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.shop-cart-item,
+.shop-cart-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.shop-cart-item {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 211, 107, .25);
+}
+
+.shop-cart-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shop-cart-controls button {
+  min-width: 34px;
+  min-height: 34px;
+  border: 1px solid #ffd36b;
+  border-radius: 50%;
+  background: #25101c;
+  color: #fff;
+}
+
+.shop-cart-summary {
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  color: #ffd36b;
+}
+
+#paypal-button-container {
+  width: min(100%, 440px);
+  min-height: 44px;
+}
+
+#checkout-status {
+  margin: 12px 0 0;
+  color: #e2d6dd;
+}
+
+.shop-card .shop-buy {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.shop-publisher-link {
+  display: block;
+  margin-top: 10px;
+  color: #ffd36b;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+/* PHONE */
+
+@media(max-width: 600px) {
+
+  .digital-shop {
+    padding: 55px 14px;
+  }
+
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-card {
+    max-width: 390px;
+
+    width: 100%;
+
+    margin: auto;
+  }
+
+  .shop-filter {
+    font-size: 11px;
+
+    padding: 8px 10px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================================================
+     HEADER
+================================================ -->
+
+<header class="site-header">
+
+<div class="container nav-wrap">
+
+<a
+href="index.html"
+class="brand"
+aria-label="Scruffy Butt Digital Designs home">
+
+<span class="brand-logo">
+
+<img
+src="logo.png"
+alt="Scruffy Butt Digital Designs logo">
+
+</span>
+
+<span class="brand-name">
+Scruffy Butt Digital Designs
+</span>
+
+</a>
+
+
+<nav
+class="royal-paw-passage"
+aria-label="Royal Paw Passage">
+
+<a href="#scruffy-digital-directory">
+Scruffy Digital Directory
+</a>
+
+<a href="#the-royal-paw-marketplace">
+The Royal Paw Marketplace
+</a>
+
+<a href="#flex-&-finesse-showcase">
+Flex & Finesse ShowCase
+</a>
+
+<a href="glitter-&-grind-designs.html">
+Glitter & Grind Designs
+</a>
+
+<a href="paws-passion-&-purpose-the-story-behind-who-i-am.html">
+Paws, Passion & Purpose: The Story Behind Who I Am
+</a>
+
+<a href="wishes-&-requests.html">
+Wishes & Requests Vault
+</a>
+
+<a href="the-sparkle-&-save-services.html">
+The Sparkle & Save Services
+</a>
+
+<a href="the-pink-collar-collective.html">
+The Pink Collar Collective
+</a>
+
+<a href="faq.html">
+FAQ
+</a>
+
+<a href="the-fine-print.html">
+The Fine Print
+</a>
+
+<a href="the-luxe-lounge.html">
+The Luxe Lounge
+</a>
+
+</nav>
+
+
+<div class="nav-actions">
+
+<a
+href="#digital-links"
+class="btn btn-primary">
+
+Shop Digital
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- SLOGAN -->
+
+<div class="slogan-banner">
+
+<p class="slogan-text">
+
+🐾 Put Some Scruff on Your Stuff 🐾
+
+</p>
+
+</div>
+
+
+<main id="home">
+
+
+<!-- ================================================
+     HERO
+================================================ -->
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+
+<div class="hero-copy">
+
+<div
+class="brand-crest"
+aria-label="Scruffy Butt Digital Designs logo">
+
+<img
+src="logo.png"
+alt="Scruffy Butt Digital Designs logo">
+
+</div>
+
+
+<span class="eyebrow">
+Creative Digital Design with Attitude
+</span>
+
+
+<h1>
+Scruffy Butt Digital Designs
+</h1>
+
+
+<p>
+
+Where Creativity Gets Classy, Ideas Get Sassy, and Every Vision Has a Purpose!
+Scruffy Butt Digital Designs is a creative digital design business and online marketplace dedicated to transforming imagination into inspiration, ideas into extraordinary creations, and everyday ambitions into achievable possibilities. 
+We specialize in digital books, educational resources, personalized designs, creative content, and professional digital services that encourage personal growth, financial empowerment, entrepreneurship, and lifelong learning. Our online boutiques offers a growing collection of downloadable digital products covering personal development, budgeting, financial literacy, crypyocurrency, artificial intelligence, business development, wellness, and more.
+
+But we are more than just a digital bookstore!
+
+From custom design projects and personalized creative solutions to bundled services, business collaborations, and innovattive digital creations that range from simple personalized designs you may get on a hat or hoody as a christmas present or as large as flexible services for a million dollar company brand launch tailored to your individual style, personal vision, and business needs.
+*Business Branding *Custom Projects *Personalized Apparel Designs *Holidays *Special Occasions *Bulk Orders *One-of-a-Kind Digital Designs *Website designing *Business Card Logos *Purses/Totes *Personalized Monograms * Memorial/Tribute graphics *Advertisement Banners * Promotional Flyers *Product Packaging Designs *Social Media Branding Kits *Business Luanch Design Packages *Marketing & Promotional Campaigns *Personalized Decorations * Wall Art *Digital Prints *Canvas Artwork *Pet Memorials *eBook Covers * Childrens book Illustrations *Journals *Planners *Author Branding kits *Facebook Business Banners * Digital Advertisements *Social Media Content Packages *Influencer Branding kits *Creator Merchandise designs *Sports-Inspired Graphics *music-Inspired Artwork* Gamer merchandise *Corporate promotional packages *Wedding Stationary collections *Event branding packages 
+
+
+</p>
+
+
+<div class="hero-actions">
+
+<a
+href="#digital-links"
+class="btn btn-primary large">
+
+Browse Digital Products
+
+</a>
+
+
+<a
+href="#catalog"
+class="btn btn-secondary large">
+
+Explore Designs
+
+</a>
+
+</div>
+
+
+<ul
+class="trust-list"
+aria-label="Shop features">
+
+<li>
+Digital products
+</li>
+
+<li>
+Multiple categories
+</li>
+
+<li>
+Direct product access
+</li>
+
+</ul>
+
+</div>
+
+<div id="paypal-container-ZQKDWR2EQQNW4"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "ZQKDWR2EQQNW4",
+  }).render("#paypal-container-ZQKDWR2EQQNW4")
+</script>
+
+<div
+class="hero-visual"
+aria-label="Scruffy Butt Digital Designs preview">
+
+<div class="dashboard-card main-card">
+
+<div class="card-header">
+
+<span class="dot dot-red"></span>
+<span class="dot dot-yellow"></span>
+<span class="dot dot-green"></span>
+
+</div>
+
+
+<div class="stat-row">
+
+<div>
+
+<p>
+Scruffy Butt
+</p>
+
+<strong>
+Digital Collection
+</strong>
+
+</div>
+
+<div class="trend up">
+🐾
+</div>
+
+</div>
+
+
+<div class="mini-grid">
+
+<div class="mini-card accent">
+
+<span>
+Explore
+</span>
+
+<strong>
+Digital Guides
+</strong>
+
+</div>
+
+
+<div class="mini-card">
+
+<span>
+Discover
+</span>
+
+<strong>
+Creative Resources
+</strong>
+
+</div>
+
+
+<div class="mini-card wide">
+
+<span>
+Our Style
+</span>
+
+<strong>
+Bold • Fun • Creative
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="floating-badge badge-one">
+
+<span>
+Digital
+</span>
+
+<strong>
+Products
+</strong>
+
+</div>
+
+
+<div class="floating-badge badge-two">
+
+<span>
+Scruffy
+</span>
+
+<strong>
+🐾 With Attitude
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================================================
+     BRAND STRIP
+================================================ -->
+
+<section class="partners">
+
+<div
+class="container partner-row"
+aria-label="Scruffy Butt brand values">
+
+<span>
+Creative
+</span>
+
+<span>
+Digital
+</span>
+
+<span>
+Original
+</span>
+
+<span>
+Bold
+</span>
+
+<span>
+Scruffy
+</span>
+
+</div>
+
+</section>
+
+
+<!-- ================================================
+     EXISTING DESIGN CATALOG
+================================================ -->
+
+<section
+id="catalog"
+class="catalog section-spacing">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<span class="eyebrow">
+Explore Our Designs
+</span>
+
+<h2>
+Unique digital designs with personality and attitude.
+</h2>
+
+</div>
+
+
+<div
+class="filter-bar"
+aria-label="Product categories">
+
+<button
+class="filter-btn active"
+data-filter="all">
+
+All
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="templates">
+
+Templates
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="media">
+
+Illustrations
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="marketing">
+
+Branding
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="sites">
+
+Web Design
+
+</button>
+
+</div>
+
+
+<div class="product-grid">
+
+
+<article
+class="product-card"
+data-category="templates">
+
+<a
+href="product-1.html"
+class="product-thumb-link">
+
+<div class="product-thumb thumb-one"></div>
+
+</a>
+
+<div class="product-body">
+
+<div class="meta-row">
+
+<span class="tag">
+Templates
+</span>
+
+</div>
+
+<h3>
+Logo Design Pack
+</h3>
+
+<p>
+Creative logo templates for building
+a memorable digital brand.
+</p>
+
+<div class="product-footer">
+
+<a
+href="product-1.html"
+class="btn btn-small btn-primary">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+<article
+class="product-card"
+data-category="media">
+
+<a
+href="product-2.html"
+class="product-thumb-link">
+
+<div class="product-thumb thumb-two"></div>
+
+</a>
+
+<div class="product-body">
+
+<div class="meta-row">
+
+<span class="tag">
+Illustrations
+</span>
+
+</div>
+
+<h3>
+Character Illustration Bundle
+</h3>
+
+<p>
+Colorful character illustrations
+for creative projects.
+</p>
+
+<div class="product-footer">
+
+<a
+href="product-2.html"
+class="btn btn-small btn-primary">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+<article
+class="product-card"
+data-category="marketing">
+
+<a
+href="product-3.html"
+class="product-thumb-link">
+
+<div class="product-thumb thumb-three"></div>
+
+</a>
+
+<div class="product-body">
+
+<div class="meta-row">
+
+<span class="tag">
+Branding
+</span>
+
+</div>
+
+<h3>
+Brand Identity Kit
+</h3>
+
+<p>
+Creative branding resources for
+developing your visual identity.
+</p>
+
+<div class="product-footer">
+
+<a
+href="product-3.html"
+class="btn btn-small btn-primary">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+<article
+class="product-card"
+data-category="sites">
+
+<a
+href="product-4.html"
+class="product-thumb-link">
+
+<div class="product-thumb thumb-four"></div>
+
+</a>
+
+<div class="product-body">
+
+<div class="meta-row">
+
+<span class="tag">
+Web Design
+</span>
+
+</div>
+
+<h3>
+Website Design
+</h3>
+
+<p>
+Creative website designs built
+to showcase personality.
+</p>
+
+<div class="product-footer">
+
+<a
+href="product-4.html"
+class="btn btn-small btn-primary">
+
+View
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================================================
+     DIGITAL SHOP
+================================================ -->
+
+<section
+id="digital-links"
+class="digital-shop">
+
+<div class="shop-container">
+
+
+<div class="shop-heading">
+
+<span class="eyebrow">
+
+🐾 Scruffy Butt Digital Library
+
+</span>
+
+<h2>
+Find Your Next Digital Guide
+</h2>
+
+<p>
+
+Browse our collection of digital guides covering
+AI, money, business, marketing, personal growth,
+home, lifestyle, wellness and more.
+
+</p>
+
+</div>
+
+
+<div class="shop-search-wrap">
+
+<input
+type="search"
+id="shopSearch"
+class="shop-search"
+placeholder="🔎 Search digital products..."
+aria-label="Search digital products">
+
+</div>
+
+
+<div class="shop-filters">
+
+<button
+class="shop-filter active"
+data-shop-filter="all">
+
+🐾 All
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="ai">
+
+🤖 AI & Automation
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="money">
+
+💰 Money & Crypto
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="marketing">
+
+📣 Marketing
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="business">
+
+💼 Business
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="growth">
+
+💖 Personal Growth
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="home">
+
+🏡 Home & Lifestyle
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="wellness">
+
+🧘 Wellness
+
+</button>
+
+<button
+class="shop-filter"
+data-shop-filter="style">
+
+👗 Style
+
+</button>
+
+</div>
+
+
+<div
+id="shopResults"
+class="shop-results">
+</div>
+
+<section class="shop-cart" aria-labelledby="book-cart-heading">
+  <h3 id="book-cart-heading">Your cart <span id="cart-count">(0 items)</span></h3>
+  <ul id="cart-items" class="shop-cart-items"></ul>
+  <div class="shop-cart-summary">
+    <span id="cart-empty">Your cart is empty.</span>
+    <strong>Total: <span id="cart-total">$0.00</span></strong>
+  </div>
+  <div id="paypal-button-container"></div>
+  <p id="checkout-status" role="status" aria-live="polite">
+    Secure PayPal checkout will appear after payment settings are configured.
+  </p>
+</section>
+
+<div
+id="shopGrid"
+class="shop-grid">
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================================================
+     FEATURES
+================================================ -->
+
+<section
+id="features"
+class="features section-spacing">
+
+<div class="container">
+
+
+<div class="section-heading narrow">
+
+<span class="eyebrow">
+Why Scruffy Butt?
+</span>
+
+<h2>
+Digital creativity with personality.
+</h2>
+
+</div>
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+✨
+</div>
+
+<h3>
+Creative Variety
+</h3>
+
+<p>
+Explore digital resources across
+multiple topics and interests.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🐾
+</div>
+
+<h3>
+Scruffy Style
+</h3>
+
+<p>
+A playful brand built around creativity,
+personality and attitude.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+⚡
+</div>
+
+<h3>
+Easy Access
+</h3>
+
+<p>
+Choose a product and go directly
+to its sales page.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="feature-icon">
+💖
+</div>
+
+<h3>
+Easy Browsing
+</h3>
+
+<p>
+Search and filter categories to
+quickly find what interests you.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================================================
+     PROMO
+================================================ -->
+
+<section class="promo-strip">
+
+<div class="container promo-inner">
+
+<div>
+
+<span class="eyebrow light">
+Ready to explore?
+</span>
+
+<h2>
+Find a digital guide that fits your next goal.
+</h2>
+
+</div>
+
+
+<a
+href="#digital-links"
+class="btn btn-light">
+
+Shop Digital Products
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================================================
+     SERVICES
+================================================ -->
+
+<section
+id="pricing"
+class="pricing section-spacing">
+
+<div class="container">
+
+<div class="section-heading narrow">
+
+<span class="eyebrow">
+Creative Services
+</span>
+
+<h2>
+Bring your digital ideas to life.
+</h2>
+
+</div>
+
+
+<div class="pricing-grid">
+
+
+<div class="pricing-card">
+
+<span class="plan">
+Digital Design
+</span>
+
+<h3>
+Custom
+</h3>
+
+<ul>
+
+<li>
+Creative digital concepts
+</li>
+
+<li>
+Personalized design direction
+</li>
+
+<li>
+Digital-ready files
+</li>
+
+<li>
+Creative branding options
+</li>
+
+</ul>
+
+<a
+href="contact.html"
+class="btn btn-secondary full">
+
+Contact Us
+
+</a>
+
+</div>
+
+
+<div class="pricing-card featured-plan">
+
+<span class="plan">
+Digital Products
+</span>
+
+<h3>
+$29
+</h3>
+
+<ul>
+
+<li>
+Digital guides
+</li>
+
+<li>
+Business resources
+</li>
+
+<li>
+Lifestyle resources
+</li>
+
+<li>
+Multiple categories
+</li>
+
+</ul>
+
+<a
+href="#digital-links"
+class="btn btn-primary full">
+
+Browse Products
+
+</a>
+
+</div>
+
+
+<div class="pricing-card">
+
+<span class="plan">
+Brand Design
+</span>
+
+<h3>
+Creative
+</h3>
+
+<ul>
+
+<li>
+Logo concepts
+</li>
+
+<li>
+Brand identity ideas
+</li>
+
+<li>
+Digital graphics
+</li>
+
+<li>
+Custom creative work
+</li>
+
+</ul>
+
+<a
+href="contact.html"
+class="btn btn-secondary full">
+
+Contact Us
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================================================
+     FOOTER
+================================================ -->
+
+<footer
+id="contact"
+class="site-footer">
+
+<div class="container footer-grid">
+
+
+<div>
+
+<a
+href="index.html"
+class="brand"
+aria-label="Scruffy Butt Digital Designs home">
+
+<span class="brand-logo brand-logo-small">
+
+<img
+src="logo.png"
+alt="Scruffy Butt Digital Designs logo">
+
+</span>
+
+<span class="brand-name">
+Scruffy Butt Digital Designs
+</span>
+
+</a>
+
+<p>
+
+Creative digital designs, products and resources
+with personality, imagination and attitude.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h4>
+Explore
+</h4>
+
+<ul>
+
+<li>
+<a href="#catalog">
+Designs
+</a>
+</li>
+
+<li>
+<a href="#digital-links">
+Digital Products
+</a>
+</li>
+
+<li>
+<a href="#features">
+About
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>
+Categories
+</h4>
+
+<ul>
+
+<li>
+<a href="#digital-links">
+Business
+</a>
+</li>
+
+<li>
+<a href="#digital-links">
+Money
+</a>
+</li>
+
+<li>
+<a href="#digital-links">
+Lifestyle
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>
+Scruffy Butt
+</h4>
+
+<ul>
+
+<li>
+<a href="#digital-links">
+Shop
+</a>
+</li>
+
+<li>
+<a href="#pricing">
+Creative Services
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+
+<div class="container footer-bottom">
+
+<span>
+© 2026 Scruffy Butt Digital Designs
+</span>
+
+<span>
+🐾 Put Some Scruff on Your Stuff
+</span>
+
+</div>
+
+</footer>
+
+
+<!-- ================================================
+     ORIGINAL WEBSITE JAVASCRIPT
+================================================ -->
+
+<script src="script.js"></script>
+<script src="payment-config.js"></script>
+
+
+<!-- ================================================
+     DIGITAL SHOP DATABASE
+================================================ -->
+
+<script>
+
+const scruffyProducts = [
+
+/* AI */
+
+{
+title:"AI Tools for Business Automation",
+url:"https://clickcloneprofits.app/s/tFvb-5FCg3",
+category:"ai",
+label:"AI & Automation",
+icon:"🤖",
+description:"Explore AI tools and automation strategies for modern business workflows."
+},
+
+{
+title:"Mastering AI for Trendy Content Creation",
+url:"https://clickcloneprofits.app/s/yG1GyrHN1g",
+category:"ai",
+label:"AI & Content",
+icon:"✨",
+description:"Explore AI-powered approaches for creating modern digital content."
+},
+
+{
+title:"Faceless YouTube Automation",
+url:"https://clickcloneprofits.app/s/RxN4zH2gf9",
+category:"ai",
+label:"YouTube Automation",
+icon:"▶️",
+description:"Explore strategies for developing and managing faceless YouTube content."
+},
+
+
+/* MONEY */
+
+{
+title:"Budgeting for Financial Freedom",
+url:"https://clickcloneprofits.app/s/N2B-eCdwrk",
+category:"money",
+label:"Budgeting",
+icon:"💵",
+description:"Explore practical budgeting habits for taking greater control of your money."
+},
+
+{
+title:"Crypto Fundamentals",
+url:"https://clickcloneprofits.app/s/fNbpSIb8X_",
+category:"money",
+label:"Crypto",
+icon:"₿",
+description:"An introductory guide to cryptocurrency concepts and terminology."
+},
+
+{
+title:"The Side Hustle Blueprint",
+url:"https://clickcloneprofits.app/s/I4xPwm7QqQ",
+category:"money",
+label:"Side Hustles",
+icon:"💰",
+description:"Explore strategies for developing and organizing a side hustle."
+},
+
+{
+title:"Investing Your First $10K",
+url:"https://clickcloneprofits.app/s/oC8qMIFh_I",
+category:"money",
+label:"Investing",
+icon:"📈",
+description:"Explore investing concepts and strategies for your first major milestone."
+},
+
+{
+title:"Debt Freedom in 12 Months",
+url:"https://clickcloneprofits.app/s/NW4x1m6zeo",
+category:"money",
+label:"Debt",
+icon:"💳",
+description:"Explore an organized approach to setting and tracking debt-reduction goals."
+},
+
+{
+title:"Amazon KDP Passive Income",
+url:"https://clickcloneprofits.app/s/PfiD0048Z2",
+category:"money",
+label:"Publishing",
+icon:"📚",
+description:"Explore digital publishing and the Amazon KDP business model."
+},
+
+{
+title:"Etsy Digital Products Empire",
+url:"https://clickcloneprofits.app/s/2xZUdT0yVK",
+category:"money",
+label:"Digital Products",
+icon:"🛍️",
+description:"Explore the process of developing a digital-product business for Etsy."
+},
+
+{
+title:"The Complete Guide to Recognizing Where You Spend Money & How to Budget",
+url:"https://clickcloneprofits.app/s/JAlUnab-SO",
+category:"money",
+label:"Budgeting",
+icon:"🧾",
+description:"Take a closer look at spending habits and learn how to build a practical budget."
+},
+
+{
+title:"How to Save $100,000 in Your 30s & Retire by 65",
+url:"https://clickcloneprofits.app/s/S3yD9rWl7A",
+category:"money",
+label:"Savings",
+icon:"🏦",
+description:"Explore long-term savings goals and retirement-focused financial planning."
+},
+
+{
+title:"The Psychology in Trading Crypto & the Tricks to Making Money",
+url:"https://clickcloneprofits.app/s/Jybxt2C0tp",
+category:"money",
+label:"Crypto Psychology",
+icon:"🧠",
+description:"Explore trading psychology and emotional discipline in crypto markets."
+},
+
+{
+title:"Mastering Crypto Trading Psychology for Resilience",
+url:"https://clickcloneprofits.app/s/Hkq8IznYDK",
+category:"money",
+label:"Trading Mindset",
+icon:"📊",
+description:"Develop a stronger mindset for navigating the emotional side of crypto trading."
+},
+
+
+/* MARKETING */
+
+{
+title:"Content Marketing Playbook",
+url:"https://clickcloneprofits.app/s/R06sbWRr5E",
+category:"marketing",
+label:"Content Marketing",
+icon:"📣",
+description:"Explore strategies for creating and promoting digital content."
+},
+
+{
+title:"Facebook Ads on a Budget",
+url:"https://clickcloneprofits.app/s/bhWrnAjepj",
+category:"marketing",
+label:"Facebook Ads",
+icon:"📘",
+description:"Explore Facebook advertising approaches while working with a smaller budget."
+},
+
+{
+title:"SEO Simplified",
+url:"https://clickcloneprofits.app/s/w9Mq7rPQgf",
+category:"marketing",
+label:"SEO",
+icon:"🔎",
+description:"Learn the basics behind improving the visibility of online content."
+},
+
+{
+title:"Email Marketing That Converts",
+url:"https://clickcloneprofits.app/s/ldRN1Qx-GE",
+category:"marketing",
+label:"Email Marketing",
+icon:"📧",
+description:"Explore strategies for creating stronger email marketing campaigns."
+},
+
+{
+title:"Instagram Growth Blueprint",
+url:"https://clickcloneprofits.app/s/_m4QeJD7wy",
+category:"marketing",
+label:"Instagram",
+icon:"📱",
+description:"Explore strategies for developing and growing an Instagram presence."
+},
+
+{
+title:"Social Media Manager Startup",
+url:"https://clickcloneprofits.app/s/4rUt3vdXoZ",
+category:"marketing",
+label:"Social Media",
+icon:"💬",
+description:"Explore the basics of starting a social-media-management business."
+},
+
+
+/* BUSINESS */
+
+{
+title:"Digital Tools for a Smarter Better Life!",
+url:"https://clickcloneprofits.app/s/HDn4PpoR5c",
+category:"business",
+label:"Digital Tools",
+icon:"💻",
+description:"Explore digital tools designed to help simplify everyday life and work."
+},
+
+{
+title:"Project Management Simplified",
+url:"https://clickcloneprofits.app/s/CI7seHTd1o",
+category:"business",
+label:"Project Management",
+icon:"📋",
+description:"A simplified introduction to planning and managing projects."
+},
+
+{
+title:"Solopreneur Launch Blueprint",
+url:"https://clickcloneprofits.app/s/rznMBgtCWd",
+category:"business",
+label:"Entrepreneurship",
+icon:"🚀",
+description:"Explore the steps involved in developing your own solo business."
+},
+
+{
+title:"Time Blocking for Peak Performance",
+url:"https://clickcloneprofits.app/s/XTOYP1fnwF",
+category:"business",
+label:"Productivity",
+icon:"⏰",
+description:"Learn how to organize your schedule through focused blocks of time."
+},
+
+{
+title:"Remote Work Mastery",
+url:"https://clickcloneprofits.app/s/JiXled8v4m",
+category:"business",
+label:"Remote Work",
+icon:"🏠",
+description:"Explore habits and strategies for productive remote work."
+},
+
+{
+title:"Freelance Writing Fast Track",
+url:"https://clickcloneprofits.app/s/aFmCJcAGlb",
+category:"business",
+label:"Freelancing",
+icon:"✍️",
+description:"Explore the basics of developing a freelance writing path."
+},
+
+{
+title:"Fearless Public Speaking",
+url:"https://clickcloneprofits.app/s/Q49qnzNfeC",
+category:"business",
+label:"Public Speaking",
+icon:"🎤",
+description:"Explore ways to build confidence and strengthen your public-speaking skills."
+},
+
+{
+title:"Memory & Learning Accelerator",
+url:"https://clickcloneprofits.app/s/GZ0lUCEW2d",
+category:"business",
+label:"Learning",
+icon:"🧠",
+description:"Explore techniques for strengthening learning and memory habits."
+},
+/* PERSONAL GROWTH */
+
+{
+title:"The Gratitude Transformation",
+url:"https://clickcloneprofits.app/s/Xvy5phQWbs",
+category:"growth",
+label:"Gratitude",
+icon:"💖",
+description:"Explore gratitude practices and intentional personal reflection."
+},
+
+{
+title:"Journaling for Self-Discovery",
+url:"https://clickcloneprofits.app/s/P5LQxB1wXQ",
+category:"growth",
+label:"Self Discovery",
+icon:"📔",
+description:"Use journaling as a tool for reflection and understanding yourself."
+},
+
+{
+title:"Manifestation Methods That Work",
+url:"https://clickcloneprofits.app/s/K_nZTJ7U9m",
+category:"growth",
+label:"Manifestation",
+icon:"✨",
+description:"Explore manifestation practices focused on goals and intentional thinking."
+},
+
+{
+title:"The Introvert's Social Playbook",
+url:"https://clickcloneprofits.app/s/AbNRLYl6t7",
+category:"growth",
+label:"Social Confidence",
+icon:"🌸",
+description:"Explore practical approaches to social situations and communication."
+},
+
+{
+title:"Rebuilding Trust After Betrayal",
+url:"https://clickcloneprofits.app/s/v8xn8K-JgO",
+category:"growth",
+label:"Relationships",
+icon:"💔",
+description:"Explore reflection and communication after trust has been damaged."
+},
+
+{
+title:"Boundaries That Heal",
+url:"https://clickcloneprofits.app/s/EsGxE3tGO9",
+category:"growth",
+label:"Boundaries",
+icon:"🩷",
+description:"Explore healthier boundaries and stronger personal relationships."
+},
+
+{
+title:"Dating Confidence After 40",
+url:"https://clickcloneprofits.app/s/VkCCFjUN_Q",
+category:"growth",
+label:"Dating",
+icon:"💕",
+description:"Explore confidence and self-assurance while navigating dating after 40."
+},
+
+{
+title:"Communication Blueprint for Couples",
+url:"https://clickcloneprofits.app/s/Kzv1Rbebhb",
+category:"growth",
+label:"Couples",
+icon:"💑",
+description:"Explore communication strategies for stronger connections between partners."
+},
+
+{
+title:"The Confidence Blueprint",
+url:"https://clickcloneprofits.app/s/mT2Qgmy0nL",
+category:"growth",
+label:"Confidence",
+icon:"⭐",
+description:"Explore practical ways to strengthen confidence and self-belief."
+},
+
+
+/* HOME & LIFESTYLE */
+
+{
+title:"Urban Container Gardening",
+url:"https://clickcloneprofits.app/s/5WAxPT3qOa",
+category:"home",
+label:"Gardening",
+icon:"🌱",
+description:"Explore container gardening for homes with limited outdoor space."
+},
+
+{
+title:"Minimalist Home Organization",
+url:"https://clickcloneprofits.app/s/9J00LHI2dQ",
+category:"home",
+label:"Organization",
+icon:"🏡",
+description:"Explore simpler approaches to organizing and decluttering your home."
+},
+
+{
+title:"Natural DIY Cleaning Products",
+url:"https://clickcloneprofits.app/s/rmTESC6Uu_",
+category:"home",
+label:"DIY Home",
+icon:"🧽",
+description:"Explore ideas for making household cleaning products at home."
+},
+
+{
+title:"Meal Prep Mastery",
+url:"https://clickcloneprofits.app/s/_Q7l00-qz4",
+category:"home",
+label:"Meal Prep",
+icon:"🍱",
+description:"Build a more organized approach to planning and preparing meals."
+},
+
+{
+title:"Digital Detox & Deep Focus",
+url:"https://clickcloneprofits.app/s/9sfCNSnxaB",
+category:"home",
+label:"Digital Wellness",
+icon:"📵",
+description:"Explore healthier technology habits and strategies for focused time."
+},
+
+{
+title:"The 5AM Morning Mastery",
+url:"https://clickcloneprofits.app/s/VbAsI3ji88",
+category:"home",
+label:"Morning Routine",
+icon:"🌅",
+description:"Explore routines for building a more intentional start to your day."
+},
+
+
+/* WELLNESS */
+
+{
+title:"Chakra Healing Fundamentals",
+url:"https://clickcloneprofits.app/s/UmrJXc4EqR",
+category:"wellness",
+label:"Holistic Wellness",
+icon:"🌈",
+description:"Explore introductory chakra concepts and related wellness practices."
+},
+
+{
+title:"Meditation for the Modern Mind",
+url:"https://clickcloneprofits.app/s/8mfT1hYNG1",
+category:"wellness",
+label:"Mindfulness",
+icon:"🧘",
+description:"Explore meditation practices designed for busy modern lifestyles."
+},
+
+{
+title:"Yoga for Chronic Pain Relief",
+url:"https://clickcloneprofits.app/s/bW07y2pEN6",
+category:"wellness",
+label:"Yoga",
+icon:"🧘‍♀️",
+description:"Explore gentle yoga-focused approaches to movement and wellness."
+},
+
+{
+title:"Couch to 5K Running Guide",
+url:"https://clickcloneprofits.app/s/Gx5ypS3xyH",
+category:"wellness",
+label:"Running",
+icon:"🏃",
+description:"A beginner-focused guide for building toward a 5K running goal."
+},
+
+{
+title:"Intermittent Fasting Decoded",
+url:"https://clickcloneprofits.app/s/uG3w89DJty",
+category:"wellness",
+label:"Nutrition",
+icon:"🥗",
+description:"An informational introduction to intermittent fasting concepts."
+},
+
+{
+title:"Home Workout Revolution",
+url:"https://clickcloneprofits.app/s/LwngraQ6mx",
+category:"wellness",
+label:"Fitness",
+icon:"🏋️",
+description:"Explore ways to build a fitness routine from home."
+},
+
+{
+title:"Keto Lifestyle Jumpstart",
+url:"https://clickcloneprofits.app/s/OwwPDOntWf",
+category:"wellness",
+label:"Keto",
+icon:"🥑",
+description:"An introductory guide to the keto lifestyle and its common approaches."
+},
+
+{
+title:"The Anti-Inflammatory Lifestyle",
+url:"https://clickcloneprofits.app/s/cFME75Iuvh",
+category:"wellness",
+label:"Wellness",
+icon:"🌿",
+description:"Explore lifestyle ideas associated with an anti-inflammatory approach."
+},
+
+{
+title:"Natural Anxiety Relief",
+url:"https://clickcloneprofits.app/s/6hMxLzGMGz",
+category:"wellness",
+label:"Relaxation",
+icon:"🌷",
+description:"Explore general relaxation and wellness practices for everyday stress."
+},
+
+{
+title:"Hormone Balance for Women Over 40",
+url:"https://clickcloneprofits.app/s/geHobHkq_2",
+category:"wellness",
+label:"Women's Wellness",
+icon:"🌺",
+description:"An informational lifestyle guide focused on wellness after 40."
+},
+
+{
+title:"Sleep Optimization Blueprint",
+url:"https://clickcloneprofits.app/s/i4QFQ7JJlT",
+category:"wellness",
+label:"Sleep",
+icon:"🌙",
+description:"Explore habits and routines associated with healthier sleep practices."
+},
+
+{
+title:"The Gut Health Reset",
+url:"https://clickcloneprofits.app/s/DDQnAf4hA5",
+category:"wellness",
+label:"Gut Wellness",
+icon:"🌿",
+description:"An informational lifestyle guide focused on everyday digestive wellness."
+},
+
+
+/* STYLE */
+
+{
+title:"The Capsule Wardrobe Guide",
+url:"https://clickcloneprofits.app/s/kwoEPwsnG8",
+category:"style",
+label:"Style",
+icon:"👗",
+description:"Explore a simpler, more intentional approach to building and organizing your wardrobe."
+}
+
+];
+
+
+/* ================================================
+   SHOP SETUP
+================================================ */
+
+const shopGrid =
+document.getElementById("shopGrid");
+
+const shopSearch =
+document.getElementById("shopSearch");
+
+const shopResults =
+document.getElementById("shopResults");
+
+let activeCategory = "all";
+
+
+/* ================================================
+   RENDER PRODUCT CARDS
+================================================ */
+
+function renderShop() {
+
+  const searchText =
+    shopSearch.value
+      .toLowerCase()
+      .trim();
+
+
+  const filteredProducts =
+    scruffyProducts.filter(product => {
+
+      const matchesCategory =
+        activeCategory === "all" ||
+        product.category === activeCategory;
+
+
+      const matchesSearch =
+        product.title
+          .toLowerCase()
+          .includes(searchText) ||
+
+        product.label
+          .toLowerCase()
+          .includes(searchText) ||
+
+        product.description
+          .toLowerCase()
+          .includes(searchText);
+
+
+      return (
+        matchesCategory &&
+        matchesSearch
+      );
+
+    });
+
+
+  shopGrid.innerHTML = "";
+
+
+  shopResults.textContent =
+    `${filteredProducts.length} digital product${filteredProducts.length === 1 ? "" : "s"} found`;
+
+
+  filteredProducts.forEach(product => {
+
+    const card =
+      document.createElement("article");
+
+
+    card.className =
+      "shop-card";
+
+
+    card.innerHTML = `
+
+      <div class="shop-card-inner">
+
+
+        <!-- FAUX DIGITAL BOOK COVER -->
+
+        <div class="shop-cover">
+
+          <div class="cover-icon">
+            ${product.icon}
+          </div>
+
+
+          <div class="cover-title">
+            ${product.title}
+          </div>
+
+
+          <div class="cover-brand">
+            Scruffy Butt Digital Designs
+          </div>
+
+        </div>
+
+
+        <!-- PRODUCT INFORMATION -->
+
+        <div class="shop-info">
+
+
+          <span class="shop-category">
+            ${product.label}
+          </span>
+
+
+          <h3>
+            ${product.title}
+          </h3>
+
+
+          <div class="shop-sparkle">
+            ✦ ♥ ✦
+          </div>
+
+
+          <p>
+            ${product.description}
+          </p>
+
+
+          <!-- PRODUCT PRICE -->
+
+          <div class="product-price">
+            $29.00
+          </div>
+
+
+          <button
+            class="shop-buy"
+            type="button"
+            data-add-book="${scruffyProducts.indexOf(product) + 1}">
+            🐾 ADD TO CART
+          </button>
+          <a
+            class="shop-publisher-link"
+            href="${product.url}"
+            target="_blank"
+            rel="noopener noreferrer">
+            View publisher page
+          </a>
+
+
+        </div>
+
+      </div>
+
+    `;
+
+
+    shopGrid.appendChild(card);
+
+  });
+
+}
+
+
+/* ================================================
+   CATEGORY FILTERS
+================================================ */
+
+document
+  .querySelectorAll(
+    ".shop-filter"
+  )
+  .forEach(button => {
+
+    button.addEventListener(
+      "click",
+      () => {
+
+        document
+          .querySelectorAll(
+            ".shop-filter"
+          )
+          .forEach(btn => {
+
+            btn.classList.remove(
+              "active"
+            );
+
+          });
+
+
+        button.classList.add(
+          "active"
+        );
+
+
+        activeCategory =
+          button.dataset.shopFilter;
+
+
+        renderShop();
+
+      }
+    );
+
+  });
+
+
+/* ================================================
+   SEARCH
+================================================ */
+
+shopSearch.addEventListener(
+  "input",
+  renderShop
+);
+
+
+/* ================================================
+   LOAD SHOP
+================================================ */
+
+renderShop();
+
+/* ================================================
+   PAYPAL BOOK CHECKOUT
+================================================ */
+
+const paymentConfig = window.SCRUFFY_PAYMENT_CONFIG || {};
+const cartItems = document.getElementById("cart-items");
+const cartCount = document.getElementById("cart-count");
+const cartEmpty = document.getElementById("cart-empty");
+const cartTotal = document.getElementById("cart-total");
+const checkoutStatus = document.getElementById("checkout-status");
+const paypalContainer = document.getElementById("paypal-button-container");
+const cart = new Map();
+const maxQuantityPerBook = 20;
+
+function setCheckoutStatus(message) {
+  checkoutStatus.textContent = message;
+}
+
+function renderCart() {
+  cartItems.replaceChildren();
+  let totalQuantity = 0;
+
+  cart.forEach(item => {
+    totalQuantity += item.quantity;
+    const row = document.createElement("li");
+    row.className = "shop-cart-item";
+
+    const title = document.createElement("span");
+    title.textContent = `${item.name} — $29.00`;
+
+    const controls = document.createElement("span");
+    controls.className = "shop-cart-controls";
+
+    const decrease = document.createElement("button");
+    decrease.type = "button";
+    decrease.textContent = "−";
+    decrease.setAttribute("aria-label", `Remove one ${item.name}`);
+    decrease.addEventListener("click", () => updateQuantity(item.id, item.quantity - 1));
+
+    const quantity = document.createElement("span");
+    quantity.textContent = String(item.quantity);
+    quantity.setAttribute("aria-label", `Quantity: ${item.quantity}`);
+
+    const increase = document.createElement("button");
+    increase.type = "button";
+    increase.textContent = "+";
+    increase.setAttribute("aria-label", `Add one ${item.name}`);
+    increase.addEventListener("click", () => updateQuantity(item.id, item.quantity + 1));
+
+    controls.append(decrease, quantity, increase);
+    row.append(title, controls);
+    cartItems.append(row);
+  });
+
+  cartCount.textContent = `(${totalQuantity} item${totalQuantity === 1 ? "" : "s"})`;
+  cartTotal.textContent = `$${(totalQuantity * 29).toFixed(2)}`;
+  cartEmpty.hidden = totalQuantity > 0;
+}
+
+function updateQuantity(id, quantity) {
+  if (quantity < 1) {
+    cart.delete(id);
+  } else if (quantity <= maxQuantityPerBook) {
+    const product = scruffyProducts[id - 1];
+    cart.set(id, { id, name: product.title, quantity });
+  } else {
+    setCheckoutStatus(`You can add up to ${maxQuantityPerBook} copies of each book.`);
+    return;
+  }
+  renderCart();
+}
+
+shopGrid.addEventListener("click", event => {
+  const button = event.target.closest("[data-add-book]");
+  if (!button) return;
+
+  const id = Number(button.dataset.addBook);
+  const currentQuantity = cart.get(id)?.quantity || 0;
+  updateQuantity(id, currentQuantity + 1);
+});
+
+function loadPayPalCheckout() {
+  const clientId = paymentConfig.paypalClientId?.trim();
+  const apiBaseUrl = paymentConfig.apiBaseUrl?.trim().replace(/\/+$/, "");
+  let apiUrl;
+
+  try {
+    apiUrl = new URL(apiBaseUrl);
+  } catch {
+    setCheckoutStatus("PayPal checkout is not configured. Please contact the store for help.");
+    return;
+  }
+
+  if (!clientId || apiUrl.protocol !== "https:") {
+    setCheckoutStatus("PayPal checkout is not configured. Please contact the store for help.");
+    return;
+  }
+
+  const sdk = document.createElement("script");
+  sdk.src = `https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(clientId)}&currency=USD&intent=capture&components=buttons`;
+  sdk.onload = () => {
+    if (!window.paypal) {
+      setCheckoutStatus("PayPal checkout could not be loaded. Please try again later.");
+      return;
+    }
+
+    window.paypal.Buttons({
+      async createOrder() {
+        if (cart.size === 0) {
+          setCheckoutStatus("Add at least one book to your cart before checking out.");
+          throw new Error("Cannot create an order for an empty cart.");
+        }
+
+        setCheckoutStatus("Preparing your secure PayPal checkout...");
+        const response = await fetch(`${apiUrl.origin}${apiUrl.pathname.replace(/\/$/, "")}/api/orders`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ cart: Array.from(cart.values()) })
+        });
+        const order = await response.json();
+        if (!response.ok || !order.id) {
+          throw new Error(order.error || "PayPal could not create your order.");
+        }
+        return order.id;
+      },
+      async onApprove(data) {
+        setCheckoutStatus("Confirming your payment with PayPal...");
+        const response = await fetch(
+          `${apiUrl.origin}${apiUrl.pathname.replace(/\/$/, "")}/api/orders/${encodeURIComponent(data.orderID)}/capture`,
+          { method: "POST" }
+        );
+        const result = await response.json();
+        if (!response.ok || result.verified !== true || result.status !== "COMPLETED") {
+          throw new Error(result.error || "PayPal could not verify your payment.");
+        }
+
+        cart.clear();
+        renderCart();
+        setCheckoutStatus(
+          `Payment complete. We will email your PDF to the address on your PayPal receipt. Order ${result.orderId}.`
+        );
+      },
+      onCancel() {
+        setCheckoutStatus("Checkout was cancelled. Your cart is still saved here.");
+      },
+      onError(error) {
+        console.error("PayPal checkout error:", error);
+        setCheckoutStatus("PayPal checkout could not be completed. Please try again or contact the store.");
+      }
+    }).render("#paypal-button-container").catch(error => {
+      console.error("PayPal button rendering failed:", error);
+      setCheckoutStatus("PayPal checkout could not be loaded. Please try again later.");
+    });
+  };
+  sdk.onerror = () => {
+    setCheckoutStatus("PayPal checkout could not be loaded. Please try again later.");
+  };
+  document.head.append(sdk);
+}
+
+loadPayPalCheckout();
+
+</script>
+
+</body>
+
+</html>
+>>>>>>> 4b84c69 (Update Scruffy Butt navigation titles and website design)
